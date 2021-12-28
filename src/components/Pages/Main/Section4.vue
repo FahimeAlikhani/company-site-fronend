@@ -51,7 +51,7 @@
 
 <script>
 export default {
-    name: "Section4"
+    name:'Section4'
 }
 </script>
 
