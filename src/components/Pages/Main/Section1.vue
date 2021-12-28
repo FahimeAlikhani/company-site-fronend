@@ -1,16 +1,23 @@
 <template>
   <section class="section">
         <div class="section-img">
-            <div class="img"></div>
+                <img src="../../../assets/img/Illustration1.svg" />
         </div>
         <div class="section-slider">
             <Carousel :autoplay="5000" :wrap-around="true">
     <Slide v-for="data in sliderdata" :key="data.id">
-      <div class="carousel__item">
+      <div >
           <h2 class="title">{{ data.title }}</h2>
-          <h1 class="titr">{{ data.titr }}</h1>
           <p class="text">{{ data.text }}</p>
+        <div class="position">
+        <div class="btn-cta">
+            <button class="btn-dir">سفارش پروژه</button>
+            <button >مشاوره و برآورد هزینه</button>
+        </div>
+        </div>
+
       </div>
+      
     </Slide>
     <template #addons>
       <Navigation />
@@ -59,29 +66,9 @@ export default {
   setup(){
       const sliderdata = reactive([{
           id: 1 ,
-          title: 'سرویس اول' , 
-          titr: 'تیتر ۱' , 
-          text: `لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
-          .طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد.`
+          title: 'شرکت طراحی و برنامه نویسی جهان افزا' , 
+          text: `بهره گیری از نیروی جوان و مستعد در راستای تحقق اهداف نوآوارنه بنیانگذارانشرکت، جهان افزا را اکنون در جایگاهی قرار داده است که می‌توانیم مشاور ومجری پیچیده ترین و خلاقانه ترین ایده های بلند پروازانه‌ی شما باشیم.بارز ترین شاخصه هایی که ما را از دیگر شرکت های فعال در حوزه نرم افزار و برنامه نویسی متمایز می کند، خلاقیت، انگیزه، پایبندی به تعهدات و نرخ های رقابتی خدمات است.`
       } ,
-      {id: 2 ,
-          title: 'سرویس دوم' , 
-          titr: 'تیتر ۲' , 
-          text: `لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
-          .طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد.`
-      } ,
-      {id: 3 ,
-          title: 'سرویس سوم' , 
-          titr: 'تیتر ۳' , 
-          text: `لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
-          .طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد.`
-      } ,
-      {id: 4 ,
-          title: 'سرویس چهارم' , 
-          titr: 'تیتر ۴' , 
-          text: `لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
-          .طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد.`
-      }
       ]);
       return{ sliderdata }
   }
@@ -100,13 +87,6 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    div.img{
-        width: 18rem;
-        height: 18rem;
-        border-radius: 70px;
-        transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
-        background: linear-gradient(316.88deg, #019CD5 19.45%, rgba(255, 255, 255, 0.5) 94.24%);
     }
     div.section-slider{
         width: 45%;
@@ -156,6 +136,36 @@ div.Social > div{
 div.instagram:hover , div.twiter:hover , div.linkdin:hover , div.facebook:hover{
     color: #019CD5;
 }
+button.btn-dir{
+        margin-right: 10px;
+    }
+div.btn-cta{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 40%;
+    text-align: center;
+    padding-top: 2rem;
+}
+div.btn-cta button{
+    width: 70%;
+    height: 2.5rem;
+    border-radius: 10px;
+    background-color: #F53838;
+    border: none;
+    color: white;
+    font-weight: bold;
+    box-shadow: 1px 3px 5px gray;
+    transition: 0.5s;
+}
+div.btn-cta button:hover{
+    box-shadow: none;
+}
+div.position{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    }
 @media(max-width: 768px){
     div.section-img{
         display: none;
@@ -171,6 +181,5 @@ div.instagram:hover , div.twiter:hover , div.linkdin:hover , div.facebook:hover{
     div.section-Social{
         display: none;
     }
-    
 }
 </style>

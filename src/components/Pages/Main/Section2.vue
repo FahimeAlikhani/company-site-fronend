@@ -1,28 +1,23 @@
 <template>
   <section class="section2">
-      <div class="boxs">
-        <div class="box1">
-            <h1 class="header">ویژگی سوم</h1>
+        <div class="featuresItem">
+            <h1 class="header">90+</h1>
             <p class="text">
-                لورم ایپسوم یا طرح‌نما به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
-          .طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد
+               تعداد همکاران 
             </p>
         </div>
-        <div class="box2">
-            <h1 class="header">ویژگی اول</h1>
+        <div class="featuresItem">
+            <h1 class="header">30+</h1>
             <p class="text">
-                لورم ایپسوم یا طرح‌نما به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
-          .طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد
+                پروژه های دردست ساخت
             </p>
         </div>
-        <div class="box3">
-            <h1 class="header">ویژگی دوم</h1>
+        <div class="featuresItem">
+            <h1 class="header">50+</h1>
             <p class="text">
-                لورم ایپسوم یا طرح‌نما به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
-          .طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد
+                پروژه های تکمیل شده
             </p>
         </div>
-      </div>
   </section>
 </template>
 
@@ -39,7 +34,7 @@ section.section2{
     padding-bottom: 2rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 div.boxs{
@@ -72,7 +67,7 @@ div.box3{
     transition: ease-in 0.4s;
 }
 h1.header{
-    padding-top: 2rem;
+    padding-top: 0.25rem;
     font-size: 2rem;
 }
 p.text{
@@ -91,6 +86,17 @@ div.box3:hover{
     background-color: #007ec7;
     transform: scale(1.1);
 }
+div.features{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    }
+div.featuresItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    }
 @media(max-width: 768px){
     section.section2{
         padding-bottom: 0;

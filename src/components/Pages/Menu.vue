@@ -1,7 +1,10 @@
 <template>
     <nav class="nav">
-        <div class="logo" ref="logo">
-            <p>LOGO</p> 
+        <div class="btn-cta">
+            <button class="position-button" v-on:click="scrollToSectionfive">
+                <img class="languge-icon" src="../../assets/img/emojione-v1_flag-for-iran.svg" />
+                <p>FA</p>
+                </button>
         </div>
         <div class="menu-bar">
             <div class="menu">
@@ -10,18 +13,19 @@
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                 </svg>
             </div>
-                <ul ref="show">
-                    <li v-on:click="scrollTofooter">تماس با ما</li>
-                    <li v-on:click="scrollToSectionfive">درباره ما</li>
-                    <li v-on:click="scrollToSectionfour">پروژه ها </li>
-                    <li v-on:click="scrollToSectiontree">گالری </li>
-                    <li v-on:click="scrollToSectiontwo">سرویس ها</li>
-                    <li v-on:click="scrollTotop">صفحه اصلی</li>
+
+                <ul class="position-nav-btn" ref="show">
+                    <li  v-on:click="scrollTofooter"><p class="position-li">تماس با ما</p></li>
+                    <li v-on:click="scrollToSectionfive"><p class="position-li">درباره ما</p></li>
+                    <li v-on:click="scrollToSectionfour"><p class="position-li">همکاران</p></li>
+                    <li v-on:click="scrollToSectiontree"><p class="position-li">پروژه ها</p></li>
+                    <li v-on:click="scrollToSectiontwo"><p class="position-li">مزایای همکاری</p></li>
+                    <li v-on:click="scrollTotop"><p class="position-li">خانه</p></li>
                 </ul>
-            </div>
+                </div>
         </div>
-        <div class="btn-cta">
-            <button v-on:click="scrollToSectionfive">CTA</button>
+      <div class="logo" ref="logo">
+            <img class="logo-style" src="../../assets/img/logo1.svg" />
         </div>
     </nav>
 </template>
@@ -142,29 +146,66 @@ nav.nav{
     height: 6.5rem;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     background-color: white;
     position: sticky;
     top: 0;
     box-shadow: 1px 1px 5px #dddddd;
     z-index: 1;
 }
-div.logo{
-    width: 20%;
+p.position-li{
+    font-family: IRANSansFaNum;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #4F5665;
+}
+p.position-li:hover{
+    color: #F53838;
+}
+img.languge-icon{
+    width: 2rem;
+    height: 1.5rem;
+}
+button.position-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     text-align: center;
 }
-div.logo p{
-    font-family: "Poppins";
-    font-size: 3rem;
-    font-weight: bolder;
-    margin-top: 1rem;
+ul.position-nav-btn{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+div.logo{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+img.logo-style{
+    width: 8.7rem;
+    height: 2.4rem;
 }
 div.menu-bar{
     width: 60%;
     display: flex;
+    
     align-items: center;
 }
 div.menu{
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 div.menu ul{
     display: flex;
@@ -177,22 +218,27 @@ div.menu ul > li{
     color: gray;
 }
 div.menu ul > li:hover{
-    color: #019CD5;
+    color: #F53838;
     cursor: pointer;
+    border-bottom:2px solid #F53838;
+
 }
 div.btn-menu{
     display: none;
 }
 div.btn-cta{
     width: 20%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: flex-end;
     padding-top: 2rem;
 }
 div.btn-cta button{
-    width: 70%;
-    height: 2.5rem;
-    border-radius: 30px;
-    background-color: #019CD5;
+    width: 30%;
+    height: 2rem;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #4F5665 , #F53838   );
     border: none;
     color: white;
     font-weight: bold;
