@@ -4,13 +4,38 @@
          <div class="position-layer">
       <div class="section3-text">
           <div class="text">
-              <p>بهره گیری از تیم مجرب، متخصص و با انگیزه</p>
-              <p>اراﺋﻪ ﻣﺸﺎوره رایگان ﺟﻬﺖ اﻣﮑﺎن ﺳﻨﺠﯽ و ﺑﺮآورد ﻫﺰﯾﻨﻪ اﻧﺠﺎم ﭘﺮوژه ﻫﺎ</p>
-              <p>ﻧﺮخ ﻫﺎی ﻣﻨﺼﻔﺎﻧﻪ و رﻗﺎﺑﺘﯽ ﺧﺪﻣﺎت</p>
-              <p>تجربه پیاده سازی پروژه های گوناگون در شاخه های مختلف</p>
-              <p>پشتیبانی مستمر در کمترین زمان ممکن</p>
-              <p>رﻋﺎﯾﺖ ﺣﺮﯾﻢ ﺧﺼﻮﺻﯽ اﺷﺨﺎص، ﺷﺮﮐﺖ ﻫﺎ و ﺣﻔﻆ ﻣﺤﺮﻣﺎﻧگی اﻃﻠﺎﻋﺎت</p>
-              <p>اﺳﺘﻔﺎده از ﺑﻪ روز ﺗﺮﯾﻦ ﻣﺘﺪﻫﺎ و ﺗﮑﻨﻮﻟﻮژی ﻫﺎ</p>
+              <div class="test-layer">
+                  <img src="../../../assets/img/tick-square.svg">
+                  <p>بهره گیری از تیم مجرب، متخصص و با انگیزه</p>
+              </div>
+              <div class="test-layer">
+                  <img src="../../../assets/img/tick-square.svg">
+                  <p>اراﺋﻪ ﻣﺸﺎوره رایگان ﺟﻬﺖ اﻣﮑﺎن ﺳﻨﺠﯽ و ﺑﺮآورد ﻫﺰﯾﻨﻪ اﻧﺠﺎم ﭘﺮوژه ﻫﺎ</p>
+              </div>
+              <div class="test-layer">
+                  <img src="../../../assets/img/tick-square.svg">
+                  <p>ﻧﺮخ ﻫﺎی ﻣﻨﺼﻔﺎﻧﻪ و رﻗﺎﺑﺘﯽ ﺧﺪﻣﺎت</p>
+              </div>
+              <div class="test-layer">
+                  <img src="../../../assets/img/tick-square.svg">
+                  <p>تجربه پیاده سازی پروژه های گوناگون در شاخه های مختلف</p>
+              </div>
+              <div class="test-layer">
+                  <img src="../../../assets/img/tick-square.svg">
+                  <p>پشتیبانی مستمر در کمترین زمان ممکن</p>
+              </div>
+              <div class="test-layer">
+                  <img src="../../../assets/img/tick-square.svg">
+                  <p>پشتیبانی مستمر در کمترین زمان ممکن</p>
+              </div>
+              <div class="test-layer">
+                  <img src="../../../assets/img/tick-square.svg">
+                  <p>رﻋﺎﯾﺖ ﺣﺮﯾﻢ ﺧﺼﻮﺻﯽ اﺷﺨﺎص، ﺷﺮﮐﺖ ﻫﺎ و ﺣﻔﻆ ﻣﺤﺮﻣﺎنگی اﻃﻠﺎﻋﺎت</p>
+              </div>
+              <div class="test-layer">
+                  <img src="../../../assets/img/tick-square.svg">
+                  <p>اﺳﺘﻔﺎده از ﺑﻪ روز ﺗﺮﯾﻦ ﻣﺘﺪﻫﺎ و ﺗﮑﻨﻮﻟﻮژی ﻫﺎ</p>
+              </div>
           </div>
       </div>
 
@@ -39,8 +64,11 @@ section.section3{
 }
 h1.header-title{
     width: 89%;
+    height: 5%;
     text-align: right;
-    padding-top: 7rem;
+    border-right: 4px solid #F53838 ;
+    padding: 5px;
+    margin-top: 40px;
     color: black;
 }
 div.section3-img{
@@ -55,6 +83,21 @@ div.text{
     height: 20rem;
     margin: 7rem auto;
     margin-right: 7rem;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    
+}
+div.text p{
+    color: #4F5665;
+}
+div.test-layer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;    
 }
 div.text p{
     margin-top: 1rem;

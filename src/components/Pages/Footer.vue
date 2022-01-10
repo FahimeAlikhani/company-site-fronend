@@ -1,35 +1,28 @@
 <template>
   <footer class="footer">
       <div class="footer-top">
-            <div class="contact">
-                <button class="go-to-top" v-on:click="scrollTotop">
-                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
-</svg> بازگشت به بالا
-                </button>
-                <p class="header">تماس با ما</p>
-                <p class="location">
-                    <span>تهران، پاسداران، خیابان نجفی،کوچه اقاقیا، پلاک2</span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-</svg>
-                </p>
-                <p class="call">
-                    <span>( +98 )2222222222</span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-inbound-fill" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0z"/>
-</svg>
-                </p>
-                <p class="facs">
-                    <span>( +98 )2222222222</span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-printer-fill" viewBox="0 0 16 16">
-  <path d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"/>
-  <path d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
-</svg>
-                </p>
-                <p class="email">
-                    <span>info@gmail.com</span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
-</svg>
-                </p>
-                <div class="section-Social">
+          <div class="layer-one">
+                <div class="layer-one-in-one">
+                    <div class="btn-cta">
+                    <button class="btn-div">عضویت در خبرنامه</button>
+                    </div>
+                    <p>
+                        ایمیل خود را وارد کنید ...
+                    </p>
+                </div>
+                <div class="layer-two-in-one">
+                    <h1>
+                        خبرنامه
+                    </h1>
+                    <p>
+                        با عضویت در خبرنامه از جدید ترین اخبار مطلع شوید!
+                    </p>
+                </div>
+          </div>
+          <div class="layer_two">
+                <div class="logo">
+                <img class="logo-style" src="../../assets/img/logo.svg" >
+            <div class="section-Social">
             <div class="Social">
                 <div class="instagram">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
@@ -53,25 +46,42 @@
                 </div>
             </div>
         </div>
+                </div>
+            <div class="contact">
+                    <h2>تماس با ما</h2>
+                <p class="location">
+                    <span>تهران، پاسداران، خیابان نجفی،کوچه اقاقیا، پلاک2</span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+</svg>
+                </p>
+                <p class="call">
+                    <span>( +98 )2222222222</span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-inbound-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0z"/>
+</svg>
+                </p>
+                <p class="facs">
+                    <span>( +98 )2222222222</span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-printer-fill" viewBox="0 0 16 16">
+  <path d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"/>
+  <path d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+</svg>
+                </p>
+                <p class="email">
+                    <span>info@gmail.com</span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+</svg>
+                </p>
+
             </div>
-            <div class="fast-contact">
-                <p class="header">دسترسی سریع</p>
-                <ul>
-                    <li v-on:click="scrollTotop">صفحه اصلی</li>
-                    <li v-on:click="scrollToSectiontwo">سرویس ها</li>
-                    <li v-on:click="scrollToSectiontree">گالری</li>
-                    <li v-on:click="scrollToSectionfour">پروژه ها</li>
-                    <li v-on:click="scrollToSectionfive">درباره ما</li>
-                    <li v-on:click="scrollTofooter">فوتر</li>
-                </ul>
+            <div class="about">
+                <h2>دربارما</h2>
+                <p class="text">
+                    شرکت جهان افزا از سال 1398 با گرد هم آمدن و همکاری تعدادی ازبرنامه نویسان با تجربه و با انگیزه از نقاط مختلف کشور آغاز به کار کرد.خدمات ما شامل طیف گسترده ای از فعالیت ها، از جمله طراحی و ساختسایت ها و اپلیکیشن های مختلف ایده محور و نوآورانه می باشد.
+                </p>
             </div>
-            <div class="logo">
-                <p>LOGO</p>
-                <p class="text">لورم ایپسوم یا طرح‌نما به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
-          .طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد.</p>
             </div>
+            <div class="footer-bottom"><p>تمامی حقوق این وب سایت متعلق به شرکت جهان افزا می باشد</p></div>
       </div>
-      <div class="footer-bottom"><p>تمامی حقوق این وب سایت متعلق به شرکت نقطه اوج افلاک می باشد</p></div>
+      
   </footer>
 </template>
 
@@ -164,36 +174,118 @@ export default {
     footer.footer{
         width: 100%;
         height: 20rem;
+        
     }
     div.footer-top{
         width: 100%;
-        height:20rem;
-        background-color: #2C2C30;
+        height:30rem;
+        background-image: linear-gradient(to top,#000  86%, #fff 10% 10%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    div.layer-one{
+        width: 60%;
+        height: 232.91px;
+        background-color: #fff;
+        border-radius: 10px;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content:center;
+        align-items: center;
+        padding: 40px 40px 40px 40px;
     }
-    div.contact , div.fast-contact , div.logo{
-        width: 25%;
+    div.layer-one-in-one{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        border: 1px solid #E5E5E5;
+        border-radius: 14px;
+        padding: 10px 15px 10px 8px;
+        
     }
-    button.go-to-top{
-    position: relative;
-    background-color: transparent;
-    border: 1px solid #d7d7d7;
-    padding: 0.5rem 1.7rem;
-    margin-top: 1rem;
-    border-radius: 5px;
-    color: white;
-    transition: 0.5s;
-}
-button.go-to-top svg{
-    position: absolute;
-    top: 0.6rem;
-    right: 6.5rem;
-}
-p.header{
+    div.layer-one-in-one p{
+        direction: rtl;
+        color: #B2B2B2;
+        margin-left: auto;
+
+    }
+    button.btn-div{
+        margin-right: 10px;
+    }
+    div.btn-cta{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        text-align: center;
+        
+    }
+    div.btn-cta button{
+        width: 100%;
+        height: 3rem;
+        border-radius: 10px;
+        background-color: #F53838;
+        border: none;
+        color: white;
+        font-weight: bold;
+        box-shadow: 1px 3px 5px #F53838;
+        transition: 0.5s;
+    }
+    div.btn-cta button:hover{
+    box-shadow: none;
+    }
+        div.layer-two-in-one{
+        width: 50%;
+        direction: rtl;
+        
+    }
+    div.layer-two-in-one h1{
+        color: #0B132A;
+    }
+    div.layer-two-in-one p{
+        color: #4F5665;
+    }
+    div.layer_two{
+      width: 100%;
+      height: 60%;
+      margin-top: 40px;
+      background-color: #000;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;   
+      align-items: center;
+    }
+
+    div.logo{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+        img.logo-style{
+        width: 100%;
+        height: 3.5rem;
+    }
+    div.contact{
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    div.contact h2{
+      color: #F53838;  
+    }
+h2.contact-us{
     text-align: right;
-    color: white;
+    color: #F53838;
     font-weight: bold;
 }
 p.location , p.call , p.facs , p.email{
@@ -204,62 +296,66 @@ p.location , p.call , p.facs , p.email{
     transition: 1s;
 }
 p.location:hover , p.call:hover , p.facs:hover , p.email:hover{
-    color: #019CD5;
+    color: #F53838;
 }
 div.section-Social{
-    display: flex;
-    justify-content: flex-end;
-}
-div.Social{
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+}
+div.Social{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     text-align: center;
     margin-top: 1rem;
 }
 div.Social > div{
-    width: 30%;
-    color: gray;
+    color: #F53838;
     transition: 1s;
 }
 div.instagram:hover , div.twiter:hover , div.linkdin:hover , div.facebook:hover{
-    color: #019CD5;
+    color: #F53838;
 }
-div.fast-contact p{
-    text-align: center;
-    margin-top: 3rem;
-}
-div.fast-contact ul{
-    text-align: center;
-    margin-top: 1rem;
-    list-style-type: none;
-    color: white;
-    font-size: 0.9rem;
-    cursor: pointer;
-}
-div.logo{
+
+div.about{
+    width: 30%;
     text-align: right;
     color: white;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
-div.logo p{
+div.about p{
     font-family: "Poppins";
     font-size: 3rem;
     font-weight: bolder;
     margin-top: 1rem;
 }
-div.logo p.text{
+div.about h2{
+    color: #F53838;
+}
+div.about p.text{
     font-family: 'Vazir';
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: normal;
     text-align: right;
 }
 div.footer-bottom{
     width: 100%;
     height: 3rem;
-    background-color: #019CD5;
+    background-color: #F53838;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     text-align: center;
     color: white;
     font-size: 0.8rem;
+    margin-top: 30px;
+    padding-bottom: 10px;
 }
 div.footer-bottom p{
     padding-top: 1rem;
@@ -273,11 +369,7 @@ div.footer-bottom p{
     div.contact , div.fast-contact , div.logo{
         width: 95%;
     }
-    div.logo{
-    text-align: center;
-}
-div.logo p.text{
-    text-align: center;
-}
+
+
 }
 </style>

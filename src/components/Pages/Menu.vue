@@ -25,7 +25,7 @@
                 </div>
         </div>
       <div class="logo" ref="logo">
-            <img class="logo-style" src="../../assets/img/logo1.svg" />
+            <img class="logo-style" src="../../assets/img/logo.svg" />
         </div>
     </nav>
 </template>

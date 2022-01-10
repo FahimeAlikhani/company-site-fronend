@@ -1,20 +1,17 @@
 <template>
   <section class="section4">
-      <div class="position-header">
-          <div class="div-header">
+
           <h1 class="header-title">پروژه های شرکت</h1>
-          </div>
-          <div class="vl"></div>
-      </div>
+
       
       <div class="position-feature">
-        <div class="featuresItem">
+        <div class="featuresItem2">
             <h2 class="header">وبسایت</h2>
         </div>
-        <div class="featuresItem">
+        <div class="featuresItem1">
             <h2 class="header">اپلیکیشن</h2>
         </div>
-        <div class="featuresItem">
+        <div class="featuresItem1">
             <h2 class="header">همه پروژه ها</h2>
 
         </div>
@@ -33,7 +30,7 @@
   <img src="../../../assets/img/img2.svg" alt="Avatar" style="width:100%">
   <div class="container">
     <h4><b>اپلیکیشن ویرا</b></h4> 
-    <p>سامانه هوشمند گزارش دهی پرستانمورد استفاده شبکه بهداشت و بیمارستانی</p> 
+    <p>سامانه هوشمند گزارش دهی پرستاران مورد استفاده شبکه بهداشت و بیمارستانی</p> 
   </div>
 </div>
 
@@ -41,7 +38,7 @@
   <img src="../../../assets/img/img1.svg" alt="Avatar" style="width:100%">
   <div class="container">
     <h4><b>اپلیکیشن کات آرا</b></h4> 
-    <p>سامانه نوبت دهی و شبکه اجتماعیآرایشگران و سالن های زیبایی کشور</p> 
+    <p>سامانه نوبت دهی و شبکه اجتماعی آرایشگران و سالن های زیبایی کشور</p> 
   </div>
 </div>
      </div>
@@ -64,10 +61,7 @@ section.section4{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-}
-.vl {
-  border-right: 3px solid #FD3D39;
-  height: 40px;
+ 
 }
 div.position-header{
     width: 100%;
@@ -75,31 +69,40 @@ div.position-header{
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-start;
+    padding-right: 23%;
+    margin: 45px;
 }
 h1.header-title{
-    width: 100%;
+    width: 89%;
+    height: 5%;
     text-align: right;
-    padding-top: 4rem;
+    border-right: 4px solid #F53838 ;
+    padding: 5px;
     color: black;
+    margin: 40px 11% 40px 0;
 }
 
 div.position-feature{
-     width: 100%;
-    height: auto;
-    padding-bottom: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center; 
+  width: 88%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 1.4rem;
+  border-radius: 24px;
+
 }
 div.position-card{
-         width: 100%;
+    width: 100%;
     height: auto;
     padding-bottom: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center; 
+    align-items: center;
+    margin-top: 20px;
 }
 div.boxs{
     width: 80%;
@@ -138,24 +141,20 @@ p.text{
     padding-top: 2rem;
     font-size: 0.9rem;
 }
-div.box1:hover{
-    background-color: #007ec7;
-    transform: scale(1.1);
-}  
-div.box2:hover{
-    background-color: #f13a36;
-    transform: scale(1.1);
-}  
-div.box3:hover{
-    background-color: #007ec7;
-    transform: scale(1.1);
-}
 div.features{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     }
-div.featuresItem{
+div.featuresItem1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border-left:1px solid #EEEFF2 ;
+    padding-left: 180px;
+    }
+div.featuresItem2{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,10 +164,9 @@ div.card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 20%;
-    width: 23rem;
+  width: 23rem;
   height: 20.6rem;
   padding: 1.4rem;
-  border-radius: 5px;
   border-radius: 24px;
 }
 

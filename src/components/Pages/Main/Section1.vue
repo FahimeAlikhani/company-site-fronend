@@ -11,7 +11,7 @@
           <p class="text">{{ data.text }}</p>
         <div class="position">
         <div class="btn-cta">
-            <button class="btn-dir">سفارش پروژه</button>
+            <button class="btn-div">سفارش پروژه</button>
             <button >مشاوره و برآورد هزینه</button>
         </div>
         </div>
@@ -136,7 +136,7 @@ div.Social > div{
 div.instagram:hover , div.twiter:hover , div.linkdin:hover , div.facebook:hover{
     color: #019CD5;
 }
-button.btn-dir{
+button.btn-div{
         margin-right: 10px;
     }
 div.btn-cta{
@@ -155,7 +155,7 @@ div.btn-cta button{
     border: none;
     color: white;
     font-weight: bold;
-    box-shadow: 1px 3px 5px gray;
+    box-shadow: 1px 3px 5px #F53838;
     transition: 0.5s;
 }
 div.btn-cta button:hover{

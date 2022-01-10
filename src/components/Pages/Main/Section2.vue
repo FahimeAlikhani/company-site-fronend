@@ -1,18 +1,18 @@
 <template>
   <section class="section2">
-        <div class="featuresItem">
+        <div class="featuresItem2">
             <h1 class="header">90+</h1>
             <p class="text">
                تعداد همکاران 
             </p>
         </div>
-        <div class="featuresItem">
+        <div class="featuresItem1">
             <h1 class="header">30+</h1>
             <p class="text">
                 پروژه های دردست ساخت
             </p>
         </div>
-        <div class="featuresItem">
+        <div class="featuresItem1">
             <h1 class="header">50+</h1>
             <p class="text">
                 پروژه های تکمیل شده
@@ -91,10 +91,18 @@ div.features{
     flex-direction: row;
     justify-content: space-around;
     }
-div.featuresItem{
+div.featuresItem1{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    align-content: center;
+    border-left:1px solid #EEEFF2 ;
+    padding-left: 180px;
+    }
+div.featuresItem2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-content: center;
     }
 @media(max-width: 768px){
