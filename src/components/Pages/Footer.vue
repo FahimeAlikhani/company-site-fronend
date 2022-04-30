@@ -2,15 +2,7 @@
   <footer class="footer">
       <div class="footer-top">
            <div class="layer-one"> 
-               <div class="btn-cta">
-                    <button  type="submit">عضویت در خبرنامه</button>
-                </div>
-              <input
-                    type="email"
-                    placeholder=" ایمیل خود را وارد کنید ..."
-                    class="input"
-                    
-                   >              
+                  <NewsletterForm/>         
                 <div class="layer-two-in-one">
                     <h1>
                         خبرنامه
@@ -71,7 +63,9 @@
 </template>
 
 <script>
+import NewsletterForm from './NewsletterForm.vue'
 export default {
+  components: { NewsletterForm },
     name: 'FooterPage' ,
     
 }
@@ -105,56 +99,12 @@ div.layer-one{
     padding: 40px 40px 40px 40px;
     }
     
-input.input {
-    width: 70%;
-    color: #B2B2B2;
-    border:1px solid #E5E5E5;
-    padding:20px 24px ;
-    border-radius: 14px;
-    font-family: 'IRANSansFaNum';
-    font-size: 1rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 30px;
-    direction: rtl;
-    }
-input:focus { 
-    outline: none !important;
-    border-color: #F53838;
-    box-shadow: 0 0 10px #F53838;
-}
 textarea:focus { 
     outline: none !important;
     border-color: #F53838;
     box-shadow: 0 0 10px #F53838;
 }
    
-div.btn-cta{
-    left:300px;
-    width: 13%;
-    text-align: center;
-    position:absolute;
-    margin-left:12px;
-    }
-div.btn-cta button{
-    width: 100%;
-    height: 3rem;
-    font-size: 18px;
-    line-height: 28.17px;
-    border-radius: 10px;
-    background-color: #F53838;
-    border: none;
-    color: white;
-    font-weight: 700;
-    cursor: pointer;       
-    }
-  
-div.btn-cta button:hover{
-    margin-top: 8px;   
-    transform:scale(.9);
-    box-shadow: #F53838 0px 20px 45px -10px;
-    
-    }
 div.layer-two-in-one{
     width: 60%;
     direction: rtl;   
