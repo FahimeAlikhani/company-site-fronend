@@ -1,216 +1,251 @@
 <template>
-  <section class="section4">
+  <section class="Section4">
+       
+     <div class="header-title">
+        <div class="title-Vertical-line"></div>
+        <div class="title-Horizontal-line"></div>
+         <div class="title">
+              <span style="color:#0B132A">همکاران </span>
+              <span style="color:#F53838">شرکت</span>
+          </div>
+         <div class="title-Vertical-line"></div> 
+     </div> 
+     
+     <!-- <div class="position-card">
+        <div class="card">
+            <img src="../../../assets/img/programmer/Alikhani.jpg" alt="Avatar" >
+           <div  class="container">
+                <h1>فهیمه علیخانی</h1>
+                <p>(Fullstack Developer) </p> 
+           </div></div>
+           <div class="card">
+            <img src="../../../assets/img/programmer/Imani.jpg" alt="Avatar" >
+           <div  class="container">
+                <h1>امین ایمانی</h1>
+                <p>(DevOps Engineer) </p> 
+           </div></div>
+           <div class="card">
+            <img src="../../../assets/img/programmer/Matin.jpg" alt="Avatar" >
+           <div  class="container">
+                <h1>علی متین</h1>
+                <p>(Android Developer) </p> 
+           </div></div>
 
-          <h1 class="header-title">پروژه های شرکت</h1>
+          <div class="card">
+            <img src="../../../assets/img/programmer/Abbasi.jpg" alt="Avatar" >
+           <div  class="container">
+               <h1>هومن عباسی</h1>
+                <p>(UI/UX کارآموز) </p>
+           </div></div>
+           <div class="card">
+            <img src="../../../assets/img/programmer/Abdolhosseini.jpg" alt="Avatar" >
+           <div  class="container">
+                <h1>محمد عبدالحسینی</h1>
+                <p>(UI/UX Designer) </p>
+           </div></div>
 
+          <div class="card">
+            <img src="../../../assets/img/programmer/Ranjbar.jpg" alt="Avatar" >
+           <div  class="container">
+                <h1>امیر رنجبر</h1>
+                <p>(Backend Developer) </p>
+           </div></div>
+      </div> -->
+      <Carousel  :autoplay="3000" :wrapAround="true" :transition="500" :settings="settings" :breakpoints="breakpoints" >
+    <Slide v-for="data in sliderdata" :key="data.id">
       
-      <div class="position-feature">
-        <div class="featuresItem2">
-            <h2 class="header">وبسایت</h2>
-        </div>
-        <div class="featuresItem1">
-            <h2 class="header">اپلیکیشن</h2>
-        </div>
-        <div class="featuresItem1">
-            <h2 class="header">همه پروژه ها</h2>
-
-        </div>
-     </div>
-     <div class="position-card">
-
-         <div class="card">
-  <img src="../../../assets/img/img3.svg" alt="Avatar" style="width:100%">
-  <div class="container">
-    <h4><b>JADE</b></h4> 
-    <p>نرم افزار ارتباطی کامپیوتر های شخصی</p> 
-  </div>
-</div>
-
-<div class="card">
-  <img src="../../../assets/img/img2.svg" alt="Avatar" style="width:100%">
-  <div class="container">
-    <h4><b>اپلیکیشن ویرا</b></h4> 
-    <p>سامانه هوشمند گزارش دهی پرستاران مورد استفاده شبکه بهداشت و بیمارستانی</p> 
-  </div>
-</div>
-
-<div class="card">
-  <img src="../../../assets/img/img1.svg" alt="Avatar" style="width:100%">
-  <div class="container">
-    <h4><b>اپلیکیشن کات آرا</b></h4> 
-    <p>سامانه نوبت دهی و شبکه اجتماعی آرایشگران و سالن های زیبایی کشور</p> 
-  </div>
-</div>
-     </div>
-
+      <div class="card">
+          <div class="avatar">{{ data.avatar}} </div>
+          <div  class="container">
+          <h1>{{ data.name }}</h1>
+          <p>{{ data.title }}</p>
+          </div>
+      </div>
+    
+    </Slide>
+    <template #addons>
+      <Navigation />
+      <Pagination />
+    </template>
+  </Carousel>
   </section>
 </template>
 
 <script>
+import { reactive } from '@vue/reactivity';
+import { Carousel, Pagination, Slide } from 'vue3-carousel';
+import 'vue3-carousel/dist/carousel.css';
+import Alikhani from '../../../assets/img/programmer/Alikhani.svg';
+import Rahmani from '../../../assets/img/programmer/Rahmani.svg';
+import Matin from '../../../assets/img/programmer/Matin.svg';
+import Abbasi from '../../../assets/img/programmer/Abbasi.svg';
+import Abdolhosseini from '../../../assets/img/programmer/abdolhoseini.svg';
+import Ranjbar from '../../../assets/img/programmer/Ranjbar.svg';
+import Basir from '../../../assets/img/programmer/Basir.svg';
+
 export default {
-    name:'Section4'
+    name: 'Section4_item' ,
+    components: {
+    Carousel,
+    Slide,
+    Pagination,
+  } , 
+  setup(){
+      const sliderdata = reactive([{
+          id: 1 ,
+          avatar: Alikhani , 
+          name: 'فهیمه علیخانی' , 
+          title: '(Funder/CEO)',
+      } ,
+      {id: 2 ,
+          avatar: Rahmani , 
+          name: 'علیرضا رحمانی' , 
+          title: '(DevOps Engineer)',
+      } ,
+      {id: 3 ,
+          avatar: Matin , 
+          name: 'علی متین' , 
+          title: '(Android Developer)',
+      } ,
+      {id: 4 ,
+          avatar: Abbasi , 
+          name: 'هومن عباسی' , 
+          title: '(کارشناس شبکه های اجتماعی) ',
+      } ,
+      {id: 5 ,
+          avatar: Abdolhosseini , 
+          name: 'محمد عبدالحسینی' , 
+          title: '(UI/UX Designer)',
+      } ,
+      {id: 6 ,
+          avatar: Ranjbar , 
+          name: 'امیر رنجبر' , 
+          title: '(Backend Developer)',
+      } ,
+      {id: 7 ,
+          avatar: Basir , 
+          name: 'الیاس بصیر' , 
+          title: '(Backend Developer)',
+      } ,
+      ]);
+      return{ 
+        sliderdata,
+        settings: {
+				itemsToShow: 1,
+				snapAlign: "center"
+        },
+        breakpoints: {
+				// 700px and up
+				700: {
+					itemsToShow: 1.5,
+					snapAlign: "center"
+				},
+				// 1024 and up
+				1024: {
+					itemsToShow: 3,
+					snapAlign: "start"
+				}
+			}
+			}},
 }
 </script>
 
 <style scoped>
-section.section4{
+section.Section4{
     width: 100%;
     height: auto;
-    padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
- 
-}
-div.position-header{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-start;
-    padding-right: 23%;
-    margin: 45px;
-}
-h1.header-title{
-    width: 89%;
-    height: 5%;
-    text-align: right;
-    border-right: 4px solid #F53838 ;
-    padding: 5px;
-    color: black;
-    margin: 40px 11% 40px 0;
+    align-items: center;   
+    margin-bottom: 5rem;
 }
 
-div.position-feature{
-  width: 88%;
-  display: flex;
+div.title-Vertical-line{
+  background-color: #F53838;
+  border: 3px solid #F53838;
+  box-shadow: 0px -4px 50px rgba(253,61,57,0.6) ;  
+  height: 40px;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  padding: 1.4rem;
-  border-radius: 24px;
-
 }
-div.position-card{
-    width: 100%;
-    height: auto;
-    padding-bottom: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 20px;
+div.title-Horizontal-line{
+  border-top: 1px dashed rgba(245,56,56,0.35);
+  width: 77%;
+  height: 1px;
+  margin: 20px 10px;
+  
 }
-div.boxs{
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
-    color: white;
+div.headerPosition{
+  margin-top: 3rem;
+  margin-left: 879px;
+  display: flex;
 }
-div.box1{
-    width: 20rem;
-    height: 20rem;
-    background-color: #16A8FC;
-    border-radius: 20px;
-    transition: ease-in 0.4s;
+div.header-title{
+  width: 75%;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row; 
 }
-div.box2{
-    width: 21rem;
-    height: 21rem;
-    background-color: #FD3D39;
-    border-radius: 20px;
-    transition: ease-in 0.4s;
-}
-div.box3{
-    width: 20rem;
-    height: 20rem;
-    background-color: #16A8FC;
-    border-radius: 20px;
-    transition: ease-in 0.4s;
-}
-h1.header{
-    padding-top: 0.25rem;
-    font-size: 2rem;
-}
-p.text{
-    padding-top: 2rem;
-    font-size: 0.9rem;
-}
-div.features{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    }
-div.featuresItem1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    border-left:1px solid #EEEFF2 ;
-    padding-left: 180px;
-    }
-div.featuresItem2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    }
-div.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 20%;
-  width: 23rem;
-  height: 20.6rem;
-  padding: 1.4rem;
-  border-radius: 24px;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-img {
-  border-radius: 5px 5px 0 0;
-}
-
-div.container {
-
+div.title {
+  text-align: right;      
+  color: black;
+  font-family: 'IRANSansFaNum';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.75rem;
+  line-height: 1.875rem;
   text-align: right;
+  padding:0 20px 0 20px;
 }
+
 @media(max-width: 768px){
-    section.section2{
+    section.section4{
         padding-bottom: 0;
     }
-    div.boxs{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    
 }
-div.box1{
-    order: 3;
-    width: 100%;
-    height: 20rem;
-    border-radius: 0;
+
+div.card {
+  
+  width: 100%;
+  max-width: 250px;
+  height: 45vh;
+  
+  border-radius: 24px;
+  margin-left: 1.2rem;
+  margin-right: 0.2rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+   box-shadow: #F53838 0px 20px 45px -10px;
 }
-div.box2{
-    order: 1;
-    width: 100%;
-    height: 20rem;
-    border-radius: 0;
+
+div.avatar {
+
+  border-radius: 24px;
+  margin-bottom: 29px;
+  width: 100%;
+  height: 30vh;
 }
-div.box3{
-    order: 2;
-    width: 100%;
-    height: 20rem;
-    border-radius: 0;
+
+div.container h1{
+  font-family: 'IRANSansFaNum';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: right;
+  letter-spacing: -0.03em;
+  color: #505887;
 }
-div.box1:hover , div.box2:hover , div.box3:hover{
-    transform: scale(1);
-}  
+
+div.container p {
+  font-family: 'IRANSansFaNum';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: right;
+  letter-spacing: -0.03em;
+  color: #718EBF;
 }
+
 </style>

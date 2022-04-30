@@ -1,11 +1,12 @@
 <template>
     <nav class="nav">
-        <div class="btn-cta">
-            <button class="position-button" v-on:click="scrollToSectionfive">
-                <img class="languge-icon" src="../../assets/img/emojione-v1_flag-for-iran.svg" />
-                <p>FA</p>
-                </button>
-        </div>
+        <!-- <div class="btn-cta">
+            <span class="position-button">              
+                <img class="languge-icon" src="../../assets/img/flag-iran.svg" />
+                FA
+                <img src="../../assets/img/arrow-down.svg">
+            </span>
+        </div> -->
         <div class="menu-bar">
             <div class="menu">
                 <div class="btn-menu" v-on:click="showmenu">
@@ -15,12 +16,14 @@
             </div>
 
                 <ul class="position-nav-btn" ref="show">
-                    <li  v-on:click="scrollTofooter"><p class="position-li">تماس با ما</p></li>
-                    <li v-on:click="scrollToSectionfive"><p class="position-li">درباره ما</p></li>
-                    <li v-on:click="scrollToSectionfour"><p class="position-li">همکاران</p></li>
-                    <li v-on:click="scrollToSectiontree"><p class="position-li">پروژه ها</p></li>
-                    <li v-on:click="scrollToSectiontwo"><p class="position-li">مزایای همکاری</p></li>
-                    <li v-on:click="scrollTotop"><p class="position-li">خانه</p></li>
+                    <li  v-on:click="scrollTofooter"><p class="position-li" tabindex="1">تماس با ما</p></li>
+                    <li  v-on:click="scrollTofooter"><p class="position-li" tabindex="1">درباره ما </p></li>
+                    <li v-on:click="scrollToSectionfour"><p class="position-li" tabindex="1">همکاران</p></li>
+                    <li v-on:click="scrollToSectiontree"><p class="position-li" tabindex="1">پروژه ها</p></li>
+                    <li v-on:click="scrollToSectiontwo"><p class="position-li" tabindex="1">مزایای همکاری</p></li>
+                    <li v-on:click="scrollTotop" >
+                    <router-link class="routerLink" to="./"><p class="position-li" tabindex="1">خانه</p></router-link>
+                    </li>
                 </ul>
                 </div>
         </div>
@@ -33,7 +36,7 @@
 <script>
 import { ref , onMounted } from 'vue';
 export default {
-    name: 'Menu' ,
+    name: 'Menu_app',
     setup(){
         const logo = ref(null);
          onMounted(() => {
@@ -68,7 +71,7 @@ export default {
         function scrollToSectiontwo(){
             if(window.innerWidth > 768){
         window.scrollTo({
-                top: 900,
+                top: 720,
                 behavior: 'smooth'
                        });
             }
@@ -82,7 +85,7 @@ export default {
         function scrollToSectiontree(){
             if(window.innerWidth > 768){
         window.scrollTo({
-                top: 1500,
+                top: 1350,
                 behavior: 'smooth'
                        });
             }
@@ -96,7 +99,7 @@ export default {
         function scrollToSectionfour(){
                 if(window.innerWidth > 768){
         window.scrollTo({
-                top: 2100,
+                top: 2450,
                 behavior: 'smooth'
                        });
             }
@@ -107,20 +110,7 @@ export default {
                        })
             }
             }
-            function scrollToSectionfive(){
-                if(window.innerWidth > 768){
-        window.scrollTo({
-                top: 2700,
-                behavior: 'smooth'
-                       });
-            }
-            else{
-                window.scrollTo({
-                top: 3000,
-                behavior: 'smooth'
-                       })
-            }
-            }
+
             function scrollTofooter(){
                 if(window.innerWidth > 768){
         window.scrollTo({
@@ -135,7 +125,7 @@ export default {
                        })
             }
             }
-        return { logo , show , showmenu , scrollTotop ,scrollToSectiontwo , scrollToSectiontree , scrollToSectionfour , scrollToSectionfive , scrollTofooter}
+        return { logo , show , showmenu , scrollTotop ,scrollToSectiontwo , scrollToSectiontree , scrollToSectionfour , scrollTofooter}
     }
 }
 </script>
@@ -143,32 +133,40 @@ export default {
 <style scoped>
 nav.nav{
     width: 100%;
-    height: 6.5rem;
+    height: 7.06rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    background-color: white;
+    justify-content: space-between;
+    background-color: #FFFFFF;
     position: sticky;
     top: 0;
-    box-shadow: 1px 1px 5px #dddddd;
+    box-shadow: 0px 5px 15px #F8F8F8;   
     z-index: 1;
 }
 p.position-li{
-    font-family: IRANSansFaNum;
+    font-family: 'IRANSansFaNum';
     font-style: normal;
     font-weight: 500;
+    vertical-align: top;
     font-size: 18px;
     line-height: 28px;
     color: #4F5665;
 }
-p.position-li:hover{
+.position-li:hover,.position-li:focus,.position-li:active{    
     color: #F53838;
+    width:auto;
+    min-height: 30px;
+    cursor: pointer;
+    border-bottom:1.5px solid #F53838;
 }
+
 img.languge-icon{
     width: 2rem;
     height: 1.5rem;
+    font-family: 'Roboto';
+    padding: 0.2rem;
 }
-button.position-button{
+.position-button{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -176,29 +174,30 @@ button.position-button{
     text-align: center;
 }
 ul.position-nav-btn{
-    width: 80%;
+    width: auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    text-align: center;
 }
+.routerLink{
+     text-decoration: none;
+ }
 div.logo{
-    width: 20%;
+    width: 139px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-
+    margin-right: 150px;
 }
 img.logo-style{
     width: 8.7rem;
     height: 2.4rem;
 }
 div.menu-bar{
-    width: 60%;
-    display: flex;
-    
+    width: 100%;
+    display: flex;  
     align-items: center;
+    
 }
 div.menu{
     width: 100%;
@@ -206,6 +205,7 @@ div.menu{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    
 }
 div.menu ul{
     display: flex;
@@ -214,59 +214,50 @@ div.menu ul{
 }
 div.menu ul > li{
     list-style-type: none;
-    width: 15.6%;
-    color: gray;
+    margin-left: 30px;
+    color: #4F5665;
 }
-div.menu ul > li:hover{
-    color: #F53838;
-    cursor: pointer;
-    border-bottom:2px solid #F53838;
 
-}
 div.btn-menu{
     display: none;
 }
-div.btn-cta{
-    width: 20%;
+
+div.btn-cta {
+    width: 7.5rem;
+    height: 2rem;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     text-align: flex-end;
-    padding-top: 2rem;
-}
-div.btn-cta button{
-    width: 30%;
-    height: 2rem;
-    border-radius: 10px;
-    background-image: linear-gradient(to right, #4F5665 , #F53838   );
+    margin-top: 2rem;
+    margin-left: 7.6rem;
+    border-radius: 6px;
+    background-color: #FFFFFF;
     border: none;
-    color: white;
+    color: #4F5665;  
     font-weight: bold;
-    box-shadow: 1px 3px 5px gray;
-    transition: 0.5s;
+    border:  1px solid #E5E5E5;
 }
 div.btn-cta button:hover{
     box-shadow: none;
 }
-@media(max-width: 768px){
+@media(max-width: 768px ){
 nav.nav{
-    width: 100%;
+   
     height: auto;
     display: flex;
     flex-direction: column;
     box-shadow: none;
 }
 div.logo{
-    width: 100%;
     text-align: center;
-    background-color: #d7d7ff;
+    background-color: #FFFFFF;
 }
 div.menu-bar{
     width: 100%;
 }
 div.menu{
-    width: 100%;
-    background-color: #f1f1f1;
+    background-color: #FFFFFF;
 }
 div.menu ul{
     display: flex;
@@ -282,14 +273,14 @@ div.menu ul{
 div.menu ul > li{
     list-style-type: none;
     width: 100%;
-    border: 1px solid #fbfbfb;
+    border: 1px solid #FFFFFF;
 }
 div.btn-menu{
     width: 15%;
     display: block;
     align-self: start;
     text-align: center;
-    background-color: #d3d3d3;
+    background-color: #FFFFFF;
     transition: ease-in 0.5s;
 }
 div.btn-menu img{
@@ -297,10 +288,7 @@ div.btn-menu img{
     height: 100%;
 }
 div.btn-menu:hover{
-    background-color: #f3f3f3;
-}
-div.btn-cta{
-    display: none;
+    background-color: #FFFFFF;
 }
 }
 </style>
