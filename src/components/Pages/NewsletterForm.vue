@@ -116,7 +116,7 @@ div.btn-cta{
     margin-top: 12px; 
     }
 div.btn-cta button{
-    width: 100%;
+    width: 90%;
     height: 3rem;
     font-size: 18px;
     line-height: 28.17px;

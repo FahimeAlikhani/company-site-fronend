@@ -143,23 +143,22 @@ div.title-Vertical-line{
   flex-direction: row;
 }
 div.title-Horizontal-line{
-  border-top: 1px dashed rgba(245,56,56,0.35);
-  width: 77.5%;
-  height: 1px;
-  margin: 20px 10px;
-
+    border-top: 1px dashed rgba(245,56,56,0.35);
+    width: 928px;
+    margin: 20px 10px;
+}
+div.header-title{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row; 
+    text-align: center;
 }
 div.headerPosition{
   margin-top: 3rem;
   margin-left: 879px;
   display: flex;
 }
-div.header-title{
-  width: 75%;
-  margin-top: 3rem;
-  display: flex;
-  flex-direction: row;
-}
+
 div.title {
   text-align: right;
   color: black;
@@ -227,5 +226,15 @@ div.container p {
   text-align: center;
   color: #718EBF;
 }
-
+@media(max-width: 768px){
+    section.section4{
+        padding-bottom: 0;
+    }
+    div.header-title{
+      text-align: center;
+    }
+    div.title-Horizontal-line{ 
+       width: 0;
+    }
+}
 </style>

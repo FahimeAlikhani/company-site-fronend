@@ -95,15 +95,15 @@ div.title-Vertical-line{
   flex-direction: row;
 }
 div.title-Horizontal-line{
-  border-top: 1px dashed rgba(245,56,56,0.35);
-  width: 76.5%;
-  margin: 20px 10px;
+    border-top: 1px dashed rgba(245,56,56,0.35);
+    width: 928px;
+    margin: 20px 10px;
 }
 div.header-title{
-  width: 75%;
-  margin-top: 3rem;
-  display: flex;
-  flex-direction: row; 
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row; 
+    text-align: center;
 }
 div.title {
   color: black;
@@ -229,7 +229,16 @@ div.container p {
 }
 @media(max-width: 768px){
     section.section2{
-        padding-bottom: 0;
+       padding-bottom: 0;
+    }
+    div.header-title{
+       text-align: center;
+    }
+    div.title-Horizontal-line{ 
+       width: 0;
+    }
+    div.card {
+       width: 45%;
     }
 }
 </style>

@@ -83,14 +83,14 @@ div.title-Vertical-line{
 }
 div.title-Horizontal-line{
     border-top: 1px dashed rgba(245,56,56,0.35);
-    width: 58%;
+    width: 713px;
     margin: 20px 10px;
 }
 div.header-title{
-    width: 75%;
     margin-top: 3rem;
     display: flex;
     flex-direction: row; 
+    text-align: center;
 }
 div.title {
     text-align: right;      
@@ -169,16 +169,24 @@ div.position-layer{
     justify-content: space-around;
 }
 @media(max-width: 768px){
+    div.header-title{
+      text-align: center;
+    }
+    div.title-Horizontal-line{ 
+       width: 0;
+    }
     div.section2-img{
     display: none;
-}
-div.section2-text{
+    }
+    div.section2-text{
     width: 100%;
-}
-div.text{
+    }
+    div.text{
     width: 90%;
-    height: 12rem;
-    
-}
+    height: 12rem;   
+    }
+    div.position-layer{
+    margin-top: 90px;
+    }
 }
 </style>

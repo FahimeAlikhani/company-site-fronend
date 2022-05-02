@@ -2,7 +2,9 @@
   <footer class="footer">
       <div class="footer-top">
            <div class="layer-one"> 
-                  <NewsletterForm/>         
+               <div class="newsletter">
+                  <NewsletterForm/> 
+               </div>        
                 <div class="layer-two-in-one">
                     <h1>
                         خبرنامه
@@ -106,10 +108,15 @@ textarea:focus {
 }
    
 div.layer-two-in-one{
-    width: 60%;
-    direction: rtl;   
+    width: 35%;
+    text-align: right;   
     }
-
+div.newsletter{
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+}
 div.layer-two-in-one h1{
     font-size: 28px;
     line-height: 54px;
@@ -233,10 +240,33 @@ div.footer-bottom p{
     div.contact , div.fast-contact , div.logo{
         width: 50%;
     }
-    div.layer-two-in-one{
-       width: 300%; 
-       margin-bottom: 150px;
+    div.layer-one{
+       height: 200px;
+       padding: 0 5px 60px 5px;
     }
-
+    div.layer-two-in-one{
+        width: 100%;
+          
+    }
+    div.newsletter{
+        width: 100%;
+        text-align: center; 
+        margin-top: 170px;
+    }
+    div.layer_two{
+       width: 80%;
+       text-align: center;
+       flex-direction: column-reverse;
+    }
+    div.about{
+       margin-top: 20px;
+       width: 100%;
+       text-align: center;
+    }
+    div.logo{
+       margin-top: 40px;
+       width: 60%;
+       text-align: center;
+    }
 }
 </style>

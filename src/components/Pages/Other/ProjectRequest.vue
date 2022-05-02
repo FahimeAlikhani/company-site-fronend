@@ -10,80 +10,83 @@
          <div class="title-Vertical-line"></div> 
      </div> 
 
-         <div class="position-layer">
-            <div class="section-img">
-          <div >
+     <div class="position-layer">
+         <div class="section-img">
+            <div >
               <img src="../../../assets/img/ProjectRequest.svg" alt="ProjectRequest">
+            </div>
+         </div>
+        <div>
+             <!-- This shows a success message if the form was submitted correctly. -->
+             <div v-if="success" class="">
+                   Great! Your message has been sent successfully. I will try to respond
+                   quickly.
+            </div>
+          <form
+                   v-else
+                   class=""
+                   @:submit.prevent="sendMessage"
+                >
+             <!-- Here an error is displayed if something goes wrong -->
+             <div v-if="errored" class="">
+                    Bummer, Something went wrong. Did you fill out all of the fields?
+              </div>
+              <div class="position-layer2">
+                   <div class="text">
+                       <p>پروژه خود را به بهترین ها بسپارید</p> 
+                    </div>
+                    <div>
+                      <label for="full_name" class="label">نام و نام خانوادگی</label>
+                        <div class="">
+                            <input
+                                id="full_name"
+                                v-model="name"
+                                name="name"
+                                class="input"
+                                placeholder="نام و نام خانوادگی خود را وارد کنید "
+                             />
+                         </div>
+                     </div>
+                     <div>
+                       <label for="email" class="label">ایمیل</label>
+                          <div class="">
+                             <input
+                                 id="email"
+                                 v-model="email"
+                                 name="email"
+                                 required
+                                 type="email"
+                                 class="input"
+                                 placeholder="ایمیل خود را وارد کنید"
+                              />
+                           </div>
+                       </div>
+                       <div>
+                          <label for="message" class="label">توضیحات</label>
+                             <div class="">
+                               <textarea
+                                  id="message"
+                                  v-model="message"
+                                  name="message"
+                                  required
+                                  rows="4"
+                                  class="input"
+                                  placeholder="توضیحات پروژه را بنویسید"
+                                 ></textarea>
+                               </div>
+                         </div>
+                       <div class="btn-cta">
+                          <span
+                              type="submit"
+                              class="submit"
+                          >
+                             {{ loading ? "Sending Message..." : "ارسال" }}
+                          </span>
+                      </div>
+               </div>
+           </form>
           </div>
       </div>
-  <div>
-   <!-- This shows a success message if the form was submitted correctly. -->
-    <div v-if="success" class="rounded bg-indigo-500 text-white text-lg p-4">
-      Great! Your message has been sent successfully. I will try to respond
-      quickly.
-    </div>
-    <form
-      v-else
-      class="grid grid-cols-1 gap-y-6"
-      @:submit.prevent="sendMessage"
-
-    >
-      <!-- Here an error is displayed if something goes wrong -->
-      <div v-if="errored" class="rounded bg-red-200 text-lg p-4">
-        Bummer, Something went wrong. Did you fill out all of the fields?
-      </div>
-       <div class="text">
-      <p>پروژه خود را به بهترین ها بسپارید</p> </div>
-      <div>
-        <label for="full_name" class="label">نام و نام خانوادگی</label>
-        <div class="relative rounded-md shadow-sm">
-          <input
-            id="full_name"
-            v-model="name"
-            name="name"
-            class="input"
-            placeholder="نام و نام خانوادگی خود را وارد کنید "
-          />
-        </div>
-      </div>
-      <div>
-        <label for="email" class="label">ایمیل</label>
-        <div class="">
-          <input
-            id="email"
-            v-model="email"
-            name="email"
-            required
-            type="email"
-            class="input"
-            placeholder="ایمیل خود را وارد کنید"
-          />
-        </div>
-      </div>
-      <div>
-        <label for="message" class="label">توضیحات</label>
-        <div class="relative rounded-md shadow-sm">
-          <textarea
-            id="message"
-            v-model="message"
-            name="message"
-            required
-            rows="4"
-            class="input"
-            placeholder="توضیحات پروژه را بنویسید"
-          ></textarea>
-        </div>
-      </div>
-      <div class="btn-cta">
-        <button
-            type="submit"
-            class="submit"
-          >
-            {{ loading ? "Sending Message..." : "ارسال" }}
-         </button>
-      </div>
-    </form>
-  </div></div>
 </section>
 </template>
 <script>
@@ -144,15 +147,15 @@ div.title-Vertical-line{
 }
 div.title-Horizontal-line{
     border-top: 1px dashed rgba(245,56,56,0.35);
-    width: 78%;
+    width: 900px;
     height: 1px;
     margin: 20px 10px;
 }
 div.header-title{
-    width: 80%;
     margin-top: 3rem;
     display: flex;
     flex-direction: row; 
+    text-align: center;
 }
 div.title {
     text-align: right;      
@@ -166,36 +169,26 @@ div.title {
     padding:0 20px 0 20px;
 }
 div.section-img{
-    width: 40%;
+    width: 50%;
     margin-top: 2rem;
-    margin-left: 9.130rem;
 }
-div.section-text{
+
+div.position-layer2{
+    margin-top:2.56rem ; 
+    margin-bottom: 8rem;
     text-align: right;
-    width: 58%;
-    margin-right: 11.75rem;
 }
-div.text{
-    margin-top:2.56rem ;   
-    direction: rtl;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    font-family: 'IRANSansFaNum';
+div.text p{
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
-    text-align: right;
-}
-div.text p{
-  color: #4F5665;
-  margin-bottom: 3.75rem;
+    color: #4F5665;
+    margin-bottom: 3.75rem;
 }
 
 div.position-layer{
-    width: 100%;
+    width: 78%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -224,16 +217,11 @@ div.position-layer{
     margin: 12px 0 32px 0;
 }
 .submit{
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    width: 20%;
     padding: 12px 24px;
     background: #F53838;
     border-radius: 10px;
     margin-top: 1.375rem;
-    margin-bottom: 6.8125rem;
     cursor: pointer; 
     text-decoration: none;
     color: white; 
@@ -247,24 +235,26 @@ div.btn-cta :hover{
     box-shadow: #F53838 0px 20px 45px -10px;
     
     }
-.submit :hover{
-  margin-bottom: 5px;
-}
+
 @media(max-width: 768px){
+    div.header-title{
+      text-align: center;
+    }
+    div.title-Horizontal-line{ 
+       width: 0;
+    }
     div.section-img{
-    display: none;
-}
-div.section2-text{
-    width: 100%;
-}
-div.text{
-    width: 90%;
-    height: 12rem;
+       display: none;
+    }
     
-}
-.input{
-    width: 50%;
-    
-}
+    div.text{
+       width: 90%;  
+   }
+   div.text p{
+    text-align: center;
+    }
+   .input{
+       width: 50%; 
+   }
 }
 </style>
