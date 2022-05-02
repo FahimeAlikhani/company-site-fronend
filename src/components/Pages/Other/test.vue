@@ -1,6 +1,6 @@
 <template>
-<section class="section">
-  <div class="header-title">
+  <section class="section">        
+       <div class="header-title">
         <div class="title-Vertical-line"></div>
         <div class="title-Horizontal-line"></div>
          <div class="title">
@@ -16,24 +16,23 @@
               <img src="../../../assets/img/ProjectRequest.svg" alt="ProjectRequest">
           </div>
       </div>
-  <div>
-   <!-- This shows a success message if the form was submitted correctly. -->
-    <div v-if="success" class="rounded bg-indigo-500 text-white text-lg p-4">
+      <div>
+        <div v-if="success" class="">
       Great! Your message has been sent successfully. I will try to respond
       quickly.
     </div>
     <form
       v-else
-      class="grid grid-cols-1 gap-y-6"
+      class=""
       @:submit.prevent="sendMessage"
-
     >
       <!-- Here an error is displayed if something goes wrong -->
-      <div v-if="errored" class="rounded bg-red-200 text-lg p-4">
+      <div v-if="errored" class="">
         Bummer, Something went wrong. Did you fill out all of the fields?
       </div>
-       <div class="text">
-      <p>پروژه خود را به بهترین ها بسپارید</p> </div>
+      <div class="section-text">
+          <div class="text">
+          <p>پروژه خود را به بهترین ها بسپارید</p> 
       <div>
         <label for="full_name" class="label">نام و نام خانوادگی</label>
         <div class="relative rounded-md shadow-sm">
@@ -59,8 +58,8 @@
             placeholder="ایمیل خود را وارد کنید"
           />
         </div>
-      </div>
-      <div>
+      </div> 
+       <div>
         <label for="message" class="label">توضیحات</label>
         <div class="relative rounded-md shadow-sm">
           <textarea
@@ -73,32 +72,32 @@
             placeholder="توضیحات پروژه را بنویسید"
           ></textarea>
         </div>
-      </div>
+      </div>      
       <div class="btn-cta">
-        <button
+        <span
             type="submit"
-            class="submit"
+             class="submit"
           >
             {{ loading ? "Sending Message..." : "ارسال" }}
-         </button>
+        </span>
       </div>
-    </form>
-  </div></div>
-</section>
+    </div>   
+   </div>
+   </form></div>
+   </div>
+  </section>
 </template>
-<script>
 
+<script>
 export default {
-  name:'ProjectRequest',
-  
-  data() {
+    name: 'ProjectRequest', 
+ data() {
     return {
       loading: false,
       success: false,
       errored: false,
       name: "",
       email: "",
-      phone: "",
       message: "",
     }
   },
@@ -109,8 +108,8 @@ export default {
         .post("/messages", {
           name: this.name,
           email: this.email,
-          phone: this.phone,
           message: this.message,
+
         // eslint-disable-next-line no-unused-vars
         }).then(response => {
           this.success = true
@@ -126,6 +125,7 @@ export default {
   }
 }
 </script>
+
 <style scoped>
 section.section{
     display: flex;

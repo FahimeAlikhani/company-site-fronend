@@ -134,8 +134,16 @@ div.btn-cta button:hover{
     box-shadow: #F53838 0px 20px 45px -10px;
     
     }
-
-    input.input {
+.alert{
+    color:#F53838;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
+    text-align: left;
+    margin-left:70px;
+}
+  input.input {
     width: 70%;
     color: #B2B2B2;
     border:1px solid #E5E5E5;
