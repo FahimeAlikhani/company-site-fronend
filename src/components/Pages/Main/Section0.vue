@@ -77,6 +77,9 @@ h1.number{
     font-style: normal;
     font-size: 1.56rem;
     line-height: 1.875rem;
+    -moz-font-feature-settings: "ss02";
+    -webkit-font-feature-settings: "ss02";
+    font-feature-settings: "ss02";
 }
 p.text{
     color: #4F5665;   

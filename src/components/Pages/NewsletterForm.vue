@@ -112,8 +112,8 @@ div.btn-cta{
     width: 13%;
     text-align: center;
     position:absolute;
-    margin-left:12px;
-    margin-top: 10px; 
+    margin-left:40px;
+    margin-top: 12px; 
     }
 div.btn-cta button{
     width: 100%;
@@ -156,5 +156,17 @@ input:focus {
   .newsletter-form-container {
     width: 70vw; 
   }
-  
+  @media(max-width: 768px){
+div.newsletter-form-container{
+      width: 200%;
+      margin-top: 50px;
+    }
+    div.btn-cta button{
+      font-size: 14px;
+      line-height: 15.17px;
+      font-weight: 400;  
+    }
+}
+    
+    
 </style>

@@ -88,7 +88,7 @@ div.footer-top{
     align-items: center;
     }
 div.layer-one{
-    width: 60%;
+    width: 65%;
     height: 232.91px;
     background-color: #FFFFFF;
     border-radius: 10px;
@@ -116,6 +116,7 @@ div.layer-two-in-one h1{
     font-style: normal;
     font-weight: 700;
     color: #F53838;
+    text-align: right;
     }
 div.layer-two-in-one p{
     font-size: 1rem;
@@ -230,9 +231,12 @@ div.footer-bottom p{
         padding-bottom: 9.625rem;
     }
     div.contact , div.fast-contact , div.logo{
-        width: 95%;
+        width: 50%;
     }
-
+    div.layer-two-in-one{
+       width: 300%; 
+       margin-bottom: 150px;
+    }
 
 }
 </style>

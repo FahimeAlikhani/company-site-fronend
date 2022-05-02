@@ -44,17 +44,17 @@
         </div>
 
         <div v-if="app||allProject" class="card">
-           <img src="../../../assets/img/project/img1.svg" alt="Avatar">
+           <img src="../../../assets/img/project/CutAra.jpg" alt="Avatar">
            <div class="container">
                <div class="container-title" >اپلیکیشن کات آرا</div> 
                <p>سامانه نوبت دهی و شبکه اجتماعی آرایشگران و سالن های زیبایی کشور</p> 
             </div>
         </div>
         <div v-if="website||allProject" class="card">
-           <img src="../../../assets/img/project/img1.svg" alt="Avatar">
+           <img src="../../../assets/img/project/Peak.jpg" alt="Avatar">
            <div class="container">
                <div class="container-title" >Peak</div> 
-               <p>وبسایت  اراته خدمات و پروژه های آسانسوری شرکت آسانسور نقطه اوج افلاک</p> 
+               <p>وبسایت  ارائه خدمات و پروژه های آسانسوری شرکت آسانسور نقطه اوج افلاک</p> 
             </div>
         </div>
      </div>
@@ -96,7 +96,7 @@ div.title-Vertical-line{
 }
 div.title-Horizontal-line{
   border-top: 1px dashed rgba(245,56,56,0.35);
-  width: 77%;
+  width: 76.5%;
   margin: 20px 10px;
 }
 div.header-title{
@@ -122,8 +122,8 @@ div.box{
   box-shadow: 1px 1px 114px #0d10252c ; 
   margin-top: 60px;
   flex-direction: row;
-  justify-content:center;
-  align-items: center;
+  justify-content:right;
+  align-items: right;
   
 }  
 
@@ -198,6 +198,7 @@ div.card {
 }
 
 div.card img {
+  border-radius: 24px;
   margin-top: 0.2rem;
   width: 100%;
 }

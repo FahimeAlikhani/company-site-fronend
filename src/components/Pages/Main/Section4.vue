@@ -11,52 +11,14 @@
          <div class="title-Vertical-line"></div>
      </div>
 
-     <!-- <div class="position-card">
-        <div class="card">
-            <img src="../../../assets/img/programmer/Alikhani.jpg" alt="Avatar" >
-           <div  class="container">
-                <h1>فهیمه علیخانی</h1>
-                <p>(Fullstack Developer) </p>
-           </div></div>
-           <div class="card">
-            <img src="../../../assets/img/programmer/Imani.jpg" alt="Avatar" >
-           <div  class="container">
-                <h1>امین ایمانی</h1>
-                <p>(DevOps Engineer) </p>
-           </div></div>
-           <div class="card">
-            <img src="../../../assets/img/programmer/Matin.jpg" alt="Avatar" >
-           <div  class="container">
-                <h1>علی متین</h1>
-                <p>(Android Developer) </p>
-           </div></div>
-
-          <div class="card">
-            <img src="../../../assets/img/programmer/Abbasi.jpg" alt="Avatar" >
-           <div  class="container">
-               <h1>هومن عباسی</h1>
-                <p>(UI/UX کارآموز) </p>
-           </div></div>
-           <div class="card">
-            <img src="../../../assets/img/programmer/Abdolhosseini.jpg" alt="Avatar" >
-           <div  class="container">
-                <h1>محمد عبدالحسینی</h1>
-                <p>(UI/UX Designer) </p>
-           </div></div>
-
-          <div class="card">
-            <img src="../../../assets/img/programmer/Ranjbar.jpg" alt="Avatar" >
-           <div  class="container">
-                <h1>امیر رنجبر</h1>
-                <p>(Backend Developer) </p>
-           </div></div>
-      </div> -->
-      <Carousel  :autoplay="3000" :wrapAround="true" :transition="50000000" :settings="settings" :breakpoints="breakpoints" >
+<div class="section_slide">
+      <Carousel  :autoplay="3000" :wrapAround="true" :transition="500" :settings="settings" :breakpoints="breakpoints" >
     <Slide v-for="data in sliderdata" :key="data.id">
 
       <div class="card">
-          <div class="avatar">
-            <img :src="data.avatar" alt="Avatar" >
+          <div class="avatar_card">
+            <img class="avatar" :src="data.avatar" alt="Avatar" >
+            <img class="avatar_blur" :src="data.avatar" >
           </div>
           <div  class="container">
           <h1>{{ data.name }}</h1>
@@ -70,6 +32,7 @@
       <Pagination />
     </template>
   </Carousel>
+  </div>
   </section>
 </template>
 
@@ -77,14 +40,14 @@
 import { reactive } from '@vue/reactivity';
 import { Carousel, Pagination, Slide } from 'vue3-carousel';
 import 'vue3-carousel/dist/carousel.css';
-// import Alikhani from '@/assets/img/programmer/Alikhani.svg';
-import Alikhani from '@/assets/img/programmer/fahimeh.svg';
-import Rahmani from '../../../assets/img/programmer/Rahmani.svg';
-import Matin from '../../../assets/img/programmer/Matin.svg';
-import Abbasi from '../../../assets/img/programmer/Abbasi.svg';
-import Abdolhosseini from '../../../assets/img/programmer/abdolhoseini.svg';
-import Ranjbar from '../../../assets/img/programmer/Ranjbar.svg';
-import Basir from '../../../assets/img/programmer/Basir.svg';
+import Alikhani from '@/assets/img/programmer/Alikhani.jpg';
+import Rahmani from '../../../assets/img/programmer/Rahmani.jpg';
+import Matin from '../../../assets/img/programmer/Matin.jpg';
+import Abbasi from '../../../assets/img/programmer/Abbasi.jpg';
+import Abdolhosseini from '../../../assets/img/programmer/Abdolhoseini.jpg';
+import Ranjbar from '../../../assets/img/programmer/Ranjbar.jpg';
+import Basir from '../../../assets/img/programmer/Basir.jpg';
+import Khosravi from '../../../assets/img/programmer/Khosravi.jpg';
 
 export default {
     name: 'Section4_item' ,
@@ -113,7 +76,7 @@ export default {
       {id: 4 ,
           avatar: Abbasi ,
           name: 'هومن عباسی' ,
-          title: '(کارشناس شبکه های اجتماعی) ',
+          title: '(Social media) ',
       } ,
       {id: 5 ,
           avatar: Abdolhosseini ,
@@ -121,15 +84,21 @@ export default {
           title: '(UI/UX Designer)',
       } ,
       {id: 6 ,
-          avatar: Ranjbar ,
-          name: 'امیر رنجبر' ,
-          title: '(Backend Developer)',
+          avatar: Khosravi ,
+          name: 'هانیه خسروی' ,
+          title: '(Fontend Developer) ',
       } ,
       {id: 7 ,
+          avatar: Ranjbar ,
+          name: 'امیر رنجبر' ,
+          title: '(Backend Developer/DBA)',
+      } ,
+      {id: 8 ,
           avatar: Basir ,
           name: 'الیاس بصیر' ,
           title: '(Backend Developer)',
       } ,
+      
       ]);
       return{
         sliderdata,
@@ -140,12 +109,12 @@ export default {
         breakpoints: {
 				// 700px and up
 				700: {
-					itemsToShow: 1.5,
+					itemsToShow: 1,
 					snapAlign: "center"
 				},
 				// 1024 and up
 				1024: {
-					itemsToShow: 3,
+					itemsToShow: 5,
 					snapAlign: "start"
 				}
 			}
@@ -163,6 +132,9 @@ section.Section4{
     margin-bottom: 5rem;
 }
 
+div.section_slide{
+   width: 73%;
+}
 div.title-Vertical-line{
   background-color: #F53838;
   border: 3px solid #F53838;
@@ -172,7 +144,7 @@ div.title-Vertical-line{
 }
 div.title-Horizontal-line{
   border-top: 1px dashed rgba(245,56,56,0.35);
-  width: 77%;
+  width: 77.5%;
   height: 1px;
   margin: 20px 10px;
 
@@ -208,46 +180,51 @@ div.title {
 }
 
 div.card {
-
   width: 100%;
-  max-width: 250px;
-  height: 45vh;
-
+  max-width: 270px;
+  height: 50vh;
   border-radius: 24px;
   margin-left: 1.2rem;
   margin-right: 0.2rem;
   margin-top: 4rem;
   margin-bottom: 2rem;
-   box-shadow: #F53838 0px 20px 45px -10px;
 }
 
-div.avatar {
-
+div.avatar_card {
   border-radius: 24px;
   margin-bottom: 29px;
   width: 100%;
-  height: 30vh;
+  height: 26vh;
+}
+img.avatar {
+  border-radius: 24px;
+}
+img.avatar_blur{
+  width: 86%;
+  height: 2.5vh;
+  filter: blur(18px);
+}
+div.container{
+  font-family: 'IRANSansFaNum';
+  font-style: normal;
+  letter-spacing: -0.03em;
+  margin-top: 100px;
+  margin-right: 10px;
 }
 
 div.container h1{
-  font-family: 'IRANSansFaNum';
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 28px;
-  text-align: right;
-  letter-spacing: -0.03em;
+  text-align: center;
   color: #505887;
 }
 
 div.container p {
-  font-family: 'IRANSansFaNum';
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 25px;
-  text-align: right;
-  letter-spacing: -0.03em;
+  text-align: center;
   color: #718EBF;
 }
 

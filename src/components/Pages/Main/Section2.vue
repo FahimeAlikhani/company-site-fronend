@@ -83,7 +83,7 @@ div.title-Vertical-line{
 }
 div.title-Horizontal-line{
     border-top: 1px dashed rgba(245,56,56,0.35);
-    width: 59%;
+    width: 58%;
     margin: 20px 10px;
 }
 div.header-title{
