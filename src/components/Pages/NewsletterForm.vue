@@ -112,8 +112,8 @@ div.btn-cta{
     width: 13%;
     text-align: center;
     position:absolute;
-    margin-left:40px;
-    margin-top: 12px; 
+    margin-left:0.8%;
+    margin-top: 0.8%; 
     }
 div.btn-cta button{
     width: 90%;
@@ -144,7 +144,7 @@ div.btn-cta button:hover{
     margin-left:70px;
 }
   input.input {
-    width: 70%;
+    width: 82%;
     color: #B2B2B2;
     border:1px solid #E5E5E5;
     padding:20px 24px ;
@@ -174,9 +174,12 @@ input:focus {
       line-height: 15.17px;
       font-weight: 400;  
     }
+    input.input {
+      font-size: 0.8rem;
+    }
     .alert{
     margin-left:35px;
-}
+    }
 }
     
     

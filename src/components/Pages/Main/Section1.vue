@@ -2,13 +2,14 @@
   <section class="section1">
         <div class="section-img">
                 <img src="../../../assets/img/Illustration1.svg" />
-        </div>  
+        </div> 
+        <div class="section2"> 
           <div class="section-text-header">       
                <div class="title">
                 <span style="color:#0B132A">شرکت طراحی و برنامه نویسی</span>&nbsp;
                 <span style="color:#F53838">جهان افزا</span>
                </div>
-
+          </div>
             <div class="textBox">
               <p class="text">
 بهره گیری از نیروی جوان و مستعد در راستای تحقق اهداف نوآوارنه بنیانگذاران شرکت، جهان افزا را اکنون در جایگاهی قرار داده است که می‌توانیم مشاور و مجری پیچیده ترین و خلاقانه ترین ایده های بلند پروازانه‌ی شما باشیم
@@ -19,9 +20,9 @@
            <div class="btn-cta">           
              <div> <router-link class="routerLink" to="../Other/ConsultingPage">مشاوره و برآورد هزینه</router-link> </div>     
              <div> <router-link class="routerLink" to="../Other/ProjectRequest">سفارش پروژه</router-link></div>
-            </div></div> 
+            </div>
         </div>
-        
+        </div>  
   </section>
 </template>
 
@@ -40,18 +41,21 @@ section.section1{
     justify-content: space-evenly;
     align-items: center;
     font-family: 'IRANSansFaNum';
-    }
+}
 div.section-img{
     width: 50%;
     margin-top: 2.5rem;
     display: flex;
     justify-content: right;
     align-items: center;
-    }
-div.section-text-header{
-    width: 50%;
+}
+div.section2{
+    justify-content: right;
     text-align: center;
-    }
+}
+div.section-text-header{
+    width: 100% 
+}
 div.title{
     text-align: right;
 } 
@@ -85,8 +89,8 @@ p.text{
     direction: rtl;
 }
 div.position{
-    margin-top: 35px;
-    margin-left: 122px;
+    margin-top: 5%;
+    margin-left: 23%;
 }
 div.btn-cta{
     display:flex;
@@ -94,7 +98,7 @@ div.btn-cta{
     width: 30%;
     text-align: center;
     position:absolute;
-    }
+}
 div.btn-cta div{
     width: 100%;
     height: 3rem;
@@ -103,7 +107,7 @@ div.btn-cta div{
     border: none;        
     cursor: pointer; 
     margin-left:12px;      
-    }
+}
 .routerLink{
     text-decoration: none;
     color: white; 
@@ -117,7 +121,7 @@ div.btn-cta div:hover{
     transform:scale(.9);
     box-shadow: #F53838 0px 20px 45px -10px;
     
-    }
+}
 
 @media(max-width: 768px){
     div.section-img{
@@ -128,16 +132,11 @@ div.btn-cta div:hover{
     section.section1{
         padding-bottom: 0;
     }
-     div.section-text-header{
-        width: 90%;
+    div.section-text-header{
+        width: 100%;
     }
     div.title{
-        font-size: 1.8rem;
-        text-align: center;
-    }
-    div.position{
-        margin-top: 35px;
-        margin-left: 80px;
+        font-size: 1.6rem;
     }
     div.btn-cta{
         width: 60%;   

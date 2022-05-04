@@ -49,12 +49,11 @@ section.section0{
 }
 
 div.box{      
-    width: 1140px;
-    height: 199.99;
+    width: 77%;
     background-color: #FFFFFF;      
     border-radius: 10px;
     box-shadow: 1px 1px 114px #0d10252c ; 
-    margin-top: 98px;
+    margin-top: 5%;
     align-items: center;
     justify-content:center;
 }  
@@ -91,10 +90,10 @@ p.text{
     
 }
 img{  
-    padding-top: 4rem;
+    padding-top: 20%;
     max-width: 55px;
     max-height: 55px;
-    padding-left: 2rem ;
+    padding-left: 10% ;
 }
 
 div.divider{
@@ -110,23 +109,30 @@ div.divider{
         padding-bottom: 0;
     }
     div.featuresItem{
-      text-align: right;  
+        text-align: right;  
     }
+    div.box{      
+        margin-top: 15%;
+    }  
     div.Item{
-        display: flex;
-        width: 60%;
+        text-align: center;
+        display:table-column;
+    }
+    img{ 
+        padding-right:10% ; 
+        justify-items: center;
     }
     div.subItem{
-        padding-top: 3rem;
-        padding-left: 1rem ;
+        padding-top: 0rem;
+        padding-left: 0;
     }
     h1.number{
         font-size: 1rem;
         line-height: 1rem;
     }
     p.text{
-        font-size: 1rem;
-        line-height: 1rem;   
+        font-size: 0.8rem;
+        line-height: 1.2rem;   
     }
 }
 </style>
