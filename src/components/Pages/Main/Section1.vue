@@ -3,24 +3,24 @@
         <div class="section-img">
                 <img src="../../../assets/img/Illustration1.svg" />
         </div>  
-          <div class="section-text-header">         
-            <div class="title">
-              <span style="color:#0B132A">شرکت طراحی و برنامه نویسی</span>&nbsp;
-              <span style="color:#F53838">جهان افزا</span>
-            </div>
+          <div class="section-text-header">       
+               <div class="title">
+                <span style="color:#0B132A">شرکت طراحی و برنامه نویسی</span>&nbsp;
+                <span style="color:#F53838">جهان افزا</span>
+               </div>
 
             <div class="textBox">
               <p class="text">
 بهره گیری از نیروی جوان و مستعد در راستای تحقق اهداف نوآوارنه بنیانگذاران شرکت، جهان افزا را اکنون در جایگاهی قرار داده است که می‌توانیم مشاور و مجری پیچیده ترین و خلاقانه ترین ایده های بلند پروازانه‌ی شما باشیم
 
 بارز ترین شاخصه هایی که ما را از دیگر شرکت های فعال در حوزه نرم افزار و برنامه نویسی متمایز می کند، خلاقیت، انگیزه، پایبندی به تعهدات و نرخ های رقابتی خدمات است. </p>
-            </div>
-        <div class="position">     
-        <div class="btn-cta">           
+            </div> 
+        <div class="position">  
+           <div class="btn-cta">           
              <div> <router-link class="routerLink" to="../Other/ConsultingPage">مشاوره و برآورد هزینه</router-link> </div>     
              <div> <router-link class="routerLink" to="../Other/ProjectRequest">سفارش پروژه</router-link></div>
+            </div></div> 
         </div>
-        </div> </div>
         
   </section>
 </template>
@@ -33,10 +33,12 @@ export default {
 </script>
 <style scoped>
 section.section1{
-    width: 100%;
+    width: 90%;
     height: auto;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     font-family: 'IRANSansFaNum';
     }
 div.section-img{
@@ -46,13 +48,14 @@ div.section-img{
     justify-content: right;
     align-items: center;
     }
-    div.section-text-header{
+div.section-text-header{
     width: 50%;
-    padding-top: 2.5rem;
-    padding-right: 6.69rem;
+    text-align: center;
     }
-    
 div.title{
+    text-align: right;
+} 
+div.title span{
     font-family: 'IRANSansFaNum';
     color: #4f5665;
     text-align: right;
@@ -81,19 +84,16 @@ p.text{
     text-justify: inter-word;
     direction: rtl;
 }
-
-button.btn-div{
-     margin-right: 36px;
-    }
-
+div.position{
+    margin-top: 35px;
+    margin-left: 122px;
+}
 div.btn-cta{
     display:flex;
     flex-direction: row;
     width: 30%;
     text-align: center;
-    justify-items: center;
     position:absolute;
-    
     }
 div.btn-cta div{
     width: 100%;
@@ -118,25 +118,33 @@ div.btn-cta div:hover{
     box-shadow: #F53838 0px 20px 45px -10px;
     
     }
-div.position{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 35px;
-    }
+
 @media(max-width: 768px){
     div.section-img{
         margin-left:50px;
         display: none;
     }
-    section.section{
+
+    section.section1{
         padding-bottom: 0;
     }
      div.section-text-header{
-        width: 100%;
-        padding-bottom: 2rem;
-        background-color: #F8F8F8;
+        width: 90%;
     }
-    
+    div.title{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    div.position{
+        margin-top: 35px;
+        margin-left: 80px;
+    }
+    div.btn-cta{
+        width: 60%;   
+    }
+    .routerLink{
+        font-size: 1rem;
+        font-weight: 500;
+    }
 }
 </style>

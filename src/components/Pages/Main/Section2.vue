@@ -186,7 +186,7 @@ div.position-layer{
     height: 12rem;   
     }
     div.position-layer{
-    margin-top: 90px;
+    margin-top: 150px;
     }
 }
 </style>

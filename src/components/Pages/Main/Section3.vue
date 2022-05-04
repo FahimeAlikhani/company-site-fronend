@@ -122,8 +122,8 @@ div.box{
   box-shadow: 1px 1px 114px #0d10252c ; 
   margin-top: 60px;
   flex-direction: row;
-  justify-content:right;
-  align-items: right;
+  justify-content:center;
+  align-items: center
   
 }  
 
@@ -239,6 +239,18 @@ div.container p {
     }
     div.card {
        width: 45%;
+    }
+   div.position-apps{
+      font-weight: 700;
+      font-size: 0.8rem;
+      line-height: 1.2rem;
+    }
+    div.box{      
+      width: 60%; 
+      height: 5rem;
+    }  
+    span.hoverBox{
+      padding:10px 13px;
     }
 }
 </style>

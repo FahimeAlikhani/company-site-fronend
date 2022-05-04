@@ -76,12 +76,12 @@
                                </div>
                          </div>
                        <div class="btn-cta">
-                          <span
+                          <button
                               type="submit"
                               class="submit"
                           >
                              {{ loading ? "Sending Message..." : "ارسال" }}
-                          </span>
+                          </button>
                       </div>
                </div>
            </form>

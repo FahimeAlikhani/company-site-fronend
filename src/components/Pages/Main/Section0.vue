@@ -90,15 +90,12 @@ p.text{
     line-height: 1.875rem;
     
 }
-
 img{  
     padding-top: 4rem;
     max-width: 55px;
     max-height: 55px;
     padding-left: 2rem ;
 }
-
-
 
 div.divider{
     height: 18vh;
@@ -112,7 +109,24 @@ div.divider{
     section.section0{
         padding-bottom: 0;
     }
-    
-
+    div.featuresItem{
+      text-align: right;  
+    }
+    div.Item{
+        display: flex;
+        width: 60%;
+    }
+    div.subItem{
+        padding-top: 3rem;
+        padding-left: 1rem ;
+    }
+    h1.number{
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    p.text{
+        font-size: 1rem;
+        line-height: 1rem;   
+    }
 }
 </style>

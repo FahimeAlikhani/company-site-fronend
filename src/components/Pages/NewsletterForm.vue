@@ -165,7 +165,7 @@ input:focus {
     width: 70vw; 
   }
   @media(max-width: 768px){
-div.newsletter-form-container{
+    div.newsletter-form-container{
       width: 200%;
       margin-top: 50px;
     }
@@ -174,6 +174,9 @@ div.newsletter-form-container{
       line-height: 15.17px;
       font-weight: 400;  
     }
+    .alert{
+    margin-left:35px;
+}
 }
     
     
