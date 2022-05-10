@@ -4,6 +4,7 @@ services:
     image: jahanafza-web:latest
     build: .
     hostname: develop.jahanafza.com
+    restart: always
     ports:
       - "8000:5000"
     environment:
