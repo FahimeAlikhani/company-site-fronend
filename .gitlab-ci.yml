@@ -1,8 +1,9 @@
-Build stage:
+stages:
+  - Build-Stage
+  
+Build-Stage:
+  stage: Build-Stage
   script: |
-    echo "Hello world"
-    hostname
-    uname -a
-    docker info
-    docker build -t app:${CI_PIPELINE_ID} .
-
+    docker-compose version
+    docker-compose build
+ 
