@@ -4,5 +4,5 @@ Build stage:
     hostname
     uname -a
     docker info
-    # docker build -t app_${CI_PIPELINE_ID} .
+    docker build -t app:${CI_PIPELINE_ID} .
 
