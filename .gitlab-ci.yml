@@ -9,7 +9,7 @@ Build-Stage:
   stage: build
   script: |
     docker-compose down
-    docker-compose build --no-cache
+    docker-compose build --no-cache --force-rm
 
 Deploy-Stage:
   stage: deploy

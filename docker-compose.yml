@@ -1,7 +1,20 @@
 version: "3.0"
 services:
   web:
+    image: jahanafza-web:latest
     build: .
+    hostname: develop.jahanafza.com
     ports:
       - "8000:5000"
+    environment:
+      - VIRTUAL_HOST=develop.jahanafza.com
+      - VIRTUAL_PORT=8000
+      - VIRTUAL_PROTO=https
+      - LETSENCRYPT_HOST=develop.jahanafza.com
+      - LETSENCRYPT_EMAIL=a.rahnam78@gmail.com
+
+networks:
+  default:
+    external:
+      name: nginx-proxy
  
