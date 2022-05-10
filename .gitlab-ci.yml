@@ -2,5 +2,6 @@ Build stage:
   script: |
     echo "Hello world"
     hostname
-    uname -a 
+    uname -a
+    docker build -t app_${CI_PIPELINE_ID} .
 
