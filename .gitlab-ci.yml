@@ -3,5 +3,6 @@ Build stage:
     echo "Hello world"
     hostname
     uname -a
-    docker build -t app_${CI_PIPELINE_ID} .
+    docker info
+    # docker build -t app_${CI_PIPELINE_ID} .
 
