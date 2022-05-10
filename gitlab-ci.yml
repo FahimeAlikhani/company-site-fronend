@@ -1,0 +1,4 @@
+Build stage:
+  script: |
+    echo "Hello world"
+
