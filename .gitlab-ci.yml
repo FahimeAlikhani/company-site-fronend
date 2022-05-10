@@ -1,5 +1,6 @@
 Build stage:
   script: |
     echo "Hello world"
-    hostname 
+    hostname
+    uname -a 
 
