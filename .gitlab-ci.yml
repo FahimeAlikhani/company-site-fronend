@@ -1,9 +1,12 @@
-stages:
-  - Build-Stage
-  
+image:
+  name: repo.ficld.ir/docker/compose:latest
+
+before_script:
+  - docker version
+  - docker-compose version
+
 Build-Stage:
   stage: Build-Stage
   script: |
-    docker-compose version
+    docker-compose down
     docker-compose build
- 
