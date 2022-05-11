@@ -7,7 +7,7 @@ RUN ["npm" , "run" , "serve"]
 RUN npm run serve
 
 From nginx
-Run rm/etc/nginx/conf/default.conf
+Run rm /etc/nginx/conf/default.conf
 COPY vue_development/vue.conf/etc/nginx/conf.d
 WORKDIR /usr/share/nginx/html
 COPY --from=0/usr/src/app/dist .
