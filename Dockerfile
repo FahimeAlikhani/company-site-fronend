@@ -1,8 +1,15 @@
-FROM repo.ficld.ir/node:lts-alpine as build-stage
-WORKDIR /app
+FROM node:12
+WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install
 COPY . .
-RUN npm run build
-EXPOSE 8080
-CMD [ "http-server", "dist" ]
+RUN ["npm" , "run" , "serve"]
+RUN npm run serve
+
+From nginx
+Run rm/etc/nginx/conf/default.conf
+COPY vue_development/vue.conf/etc/nginx/conf.d
+WORKDIR /usr/share/nginx/html
+COPY --from=0/usr/src/app/dist .
+EXPOSE 80
+
