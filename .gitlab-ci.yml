@@ -4,7 +4,7 @@ stages:
 deploy-nodejs:
   stage: deploy
   script:
-    - cd /opt/services/node/backend-nodejs/deployment
+    - cd /opt/services/vue/vue_deployment
     - git reset --hard HEAD
     - git pull origin stage
     - docker-compose up -d --build
