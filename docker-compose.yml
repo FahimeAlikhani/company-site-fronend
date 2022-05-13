@@ -5,11 +5,9 @@ services:
     build: .
     hostname: develop.jahanafza.com
     restart: always
-    ports:
-      - "8000:5000"
     environment:
       - VIRTUAL_HOST=develop.jahanafza.com
-      - VIRTUAL_PORT=8000
+      - VIRTUAL_PORT=8080
       - VIRTUAL_PROTO=https
       - LETSENCRYPT_HOST=develop.jahanafza.com
       - LETSENCRYPT_EMAIL=a.rahnam78@gmail.com
