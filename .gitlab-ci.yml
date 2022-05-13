@@ -1,39 +1,17 @@
-stages:
-  - deploy
+image:
+  name: repo.ficld.ir/docker/compose:latest
 
-deploy-nodejs:
+before_script:
+  - docker version
+  - docker-compose version
+
+Build-Stage:
+  stage: build
+  script: |
+    docker-compose down
+    docker-compose build --no-cache --force-rm
+
+Deploy-Stage:
   stage: deploy
-  script:
-    - cd /opt/services/vue/vue_deployment
-    - git reset --hard HEAD
-    - git pull origin stage
-    - docker-compose up -d --build
-  only:
-    - stage
-  tags:
-    - develop
-
-
-
-
-
-
-
-
-#image:
-#  name: repo.ficld.ir/docker/compose:latest
-
-#before_script:
-#  - docker version
-#  - docker-compose version
-
-#Build-Stage:
-#  stage: build
-#  script: |
-#    docker-compose down
-#    docker-compose build --no-cache --force-rm
-
-#Deploy-Stage:
-#  stage: deploy
-#  script: |
-#    docker-compose up -d
+  script: |
+    docker-compose up -d
