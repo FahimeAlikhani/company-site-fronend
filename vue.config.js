@@ -1,7 +1,8 @@
 module.exports = {
-    publicPath: '/',
-    host: '0.0.0.0',
-    port: 8080,
-    https: true,
-    hotOnly: false
+    devServer: {
+      host: '127.0.0.1',
+      port: 8080,
+      public: 'localhost:8080',
+      publicPath: '/',
+  },
 }
