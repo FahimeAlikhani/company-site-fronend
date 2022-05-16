@@ -1,0 +1,19 @@
+version: "3.0"
+services:
+  web:
+    image: jahanafza-web:latest
+    build: .
+    hostname: develop.jahanafza.com
+    restart: always
+    environment:
+      - VIRTUAL_HOST=develop.jahanafza.com
+      - VIRTUAL_PORT=80
+      - VIRTUAL_PROTO=http
+      - LETSENCRYPT_HOST=develop.jahanafza.com
+      - LETSENCRYPT_EMAIL=a.rahnam78@gmail.com
+
+networks:
+  default:
+    external:
+      name: nginx-proxy
+ 
