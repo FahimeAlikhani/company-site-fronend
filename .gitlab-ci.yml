@@ -7,11 +7,15 @@ before_script:
 
 Build-Stage:
   stage: build
+  only:
+    - develop
   script: |
     docker-compose down
     docker-compose build --no-cache --force-rm
 
 Deploy-Stage:
   stage: deploy
+  only:
+    - develop
   script: |
     docker-compose up -d
