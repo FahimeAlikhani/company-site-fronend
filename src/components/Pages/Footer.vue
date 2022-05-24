@@ -171,7 +171,7 @@ div.section-Social{
     flex-direction: row;
     justify-content: left;
     text-align: left;
-    margin-top: 54px;
+    margin-top: 34px;
 }
 div.Social{
     width: 50%;
