@@ -29,14 +29,14 @@
       </div>
       <div class="position-card">
         <div v-if="app||allProject" class="card">
-            <img src="../../../assets/img/project/img3.svg" alt="Avatar" >
+            <img src="../../../assets/img/project/Jadee.jpg" alt="Avatar" >
            <div  class="container">
                <div class="container-title">JADE</div> 
                 <p>نرم افزار ارتباطی کامپیوتر های شخصی</p> 
            </div>
         </div>
         <div v-if="app||allProject" class="card">
-           <img src="../../../assets/img/project/img2.svg" alt="Avatar" >
+           <img src="../../../assets/img/project/Vira.jpg" alt="Avatar" >
             <div class="container">
                <div class="container-title">اپلیکیشن ویرا</div> 
                <p>سامانه هوشمند گزارش دهی پرستاران مورد استفاده شبکه بهداشت و بیمارستانی</p> 
