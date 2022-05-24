@@ -20,8 +20,9 @@
                 <img class="logo-style" src="../../assets/img/logo.svg" >
                 <div class="logo-text">
                     <p>خالق استثنایی ترین ها برای جهان شما</p>
-                    <p> شماره تماس :  22125576 (021)</p>
+                    <p> شماره تماس :  77298865 (021)</p>
                     <a href="mailto:info@jahanafza.com">info@jahanafza.com</a>
+                    <p>آدرس : بزرگراه شهید سلیمانی ، بزرگراه شهید باقری،بین فلکه اول و دوم تهران پارس ، خیابان رشید، بین خیابان آهنی و گلشنی، پلاک 213، واحد 7</p>
                 </div>
             <div class="section-Social">
                 <div class="Social">
@@ -264,9 +265,12 @@ div.footer-bottom p{
        text-align: center;
     }
     div.logo{
-       margin-top: 40px;
-       width: 60%;
-       text-align: center;
+       margin-top: 40px;    
+    width: 90%;
+    height: 100%;
+    direction:unset;
+    flex-direction: column;
     }
+    
 }
 </style>

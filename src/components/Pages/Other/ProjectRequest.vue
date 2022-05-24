@@ -90,7 +90,8 @@
 </section>
 </template>
 <script>
-
+import axios from 'axios'
+import { APISettings } from "../../../api/config.js";
 export default {
   name:'ProjectRequest',
   
@@ -108,8 +109,8 @@ export default {
   methods: {
     sendMessage() {
       this.loading = true;
-      this.$axios
-        .post("/messages", {
+       axios
+        .post(APISettings.baseURL + "/messages", {
           name: this.name,
           email: this.email,
           phone: this.phone,

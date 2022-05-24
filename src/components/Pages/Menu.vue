@@ -242,16 +242,15 @@ div.btn-cta button:hover{
     box-shadow: none;
 }
 @media(max-width: 768px ){
-nav.nav{
-   
+nav.nav{  
     height: auto;
     display: flex;
-    flex-direction: column;
-    box-shadow: none;
+    flex-direction: column; 
 }
 div.logo{
     text-align: center;
     background-color: #FFFFFF;
+    justify-items: right;
 }
 div.menu-bar{
     width: 100%;
@@ -261,7 +260,7 @@ div.menu{
 }
 div.menu ul{
     display: flex;
-    text-align: center;
+    text-align: right;
     flex-direction: column-reverse;
     visibility: hidden;
     height: 0rem;
@@ -272,7 +271,7 @@ div.menu ul{
 
 div.menu ul > li{
     list-style-type: none;
-    width: 100%;
+    width: 78%;
     border: 1px solid #FFFFFF;
 }
 div.btn-menu{
@@ -289,6 +288,9 @@ div.btn-menu img{
 }
 div.btn-menu:hover{
     background-color: #FFFFFF;
+}
+.position-li:hover,.position-li:focus,.position-li:active{    
+    border:none;
 }
 }
 </style>

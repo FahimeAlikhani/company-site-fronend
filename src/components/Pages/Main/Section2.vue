@@ -174,6 +174,11 @@ div.position-layer{
     }
     div.title-Horizontal-line{ 
        width: 0;
+       margin: 0px ;
+    }
+    div.title {
+    text-align: center;      
+    font-size: 1.5rem;   
     }
     div.section2-img{
     display: none;
