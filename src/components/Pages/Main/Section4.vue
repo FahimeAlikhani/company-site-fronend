@@ -61,7 +61,7 @@ export default {
           id: 1 ,
           avatar: Alikhani ,
           name: 'فهیمه علیخانی' ,
-          title: '(Funder/CEO)',
+          title: '(Funder/CTO)',
       } ,
       {id: 2 ,
           avatar: Rahmani ,
@@ -76,7 +76,7 @@ export default {
       {id: 4 ,
           avatar: Abbasi ,
           name: 'هومن عباسی' ,
-          title: '(Social media) ',
+          title: '(Social media admin) ',
       } ,
       {id: 5 ,
           avatar: Abdolhosseini ,
@@ -170,7 +170,40 @@ div.title {
   text-align: right;
   padding:0 20px 0 20px;
 }
-
+.carousel__pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.carousel__pagination {
+    display: flex;
+    justify-content: center;
+    list-style:none;
+}
+.carousel__pagination button{
+   appearance: auto;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
 @media(max-width: 768px){
     section.section4{
         padding-bottom: 0;
@@ -235,6 +268,11 @@ div.container p {
     }
     div.title-Horizontal-line{ 
        width: 0;
+       margin: 0px ;
+    }
+    div.title {
+    text-align: center;      
+    font-size: 1.5rem;   
     }
 }
 </style>
