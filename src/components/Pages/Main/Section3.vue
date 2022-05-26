@@ -239,11 +239,13 @@ div.container p {
        margin: 0px ;
     }
     div.title {
-    text-align: center;      
-    font-size: 1.5rem;   
+      text-align: center;      
+      font-size: 1.5rem;   
     }
     div.card {
-       width: 45%;
+      width: 70%;
+      margin-left: 0;
+      padding: 1rem ;
     }
    div.position-apps{
       font-weight: 700;
@@ -251,11 +253,11 @@ div.container p {
       line-height: 1.2rem;
     }
     div.box{      
-      width: 60%; 
+      width: 70%; 
       height: 5rem;
     }  
     span.hoverBox{
-      padding:10px 13px;
+      padding:10px 8px;
     }
 }
 </style>

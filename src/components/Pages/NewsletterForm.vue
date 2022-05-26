@@ -166,8 +166,14 @@ input:focus {
   }
   @media(max-width: 768px){
     div.newsletter-form-container{
-      width: 200%;
+      width: 50vw;
       margin-top: 50px;
+    }
+    div.btn-cta{
+    left:250px;
+    width: 20%;
+    margin-left:0;
+    margin-top: 1.2%; 
     }
     div.btn-cta button{
       font-size: 14px;
