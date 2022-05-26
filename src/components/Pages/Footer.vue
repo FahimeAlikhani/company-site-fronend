@@ -163,6 +163,7 @@ div.logo{
     font-style: normal;
     line-height: 30px;
     text-align: right;
+    text-justify: inter-word;
     }
  
 div.section-Social{
@@ -236,18 +237,20 @@ div.footer-bottom p{
      div.footer-top{
         flex-direction: column;
         height: auto;
-        padding-bottom: 9.625rem;
     }
     div.contact , div.fast-contact , div.logo{
         width: 50%;
     }
     div.layer-one{
-       height: 200px;
-       padding: 0 5px 60px 5px;
+        width: 90%;
+        height: 200px;
+        justify-content:center;
+        align-items: center;
+        padding: 0px 40px 60px 40px;
     }
-    div.layer-two-in-one{
-        width: 100%;
-          
+    div.layer-two-in-one {
+        text-align: center; 
+         width: 100%; 
     }
     div.newsletter{
         width: 100%;

@@ -58,16 +58,15 @@ div.section-text-header{
 }
 div.title{
     text-align: right;
-} 
-div.title span{
-    font-family: 'IRANSansFaNum';
-    color: #4f5665;
-    text-align: right;
     font-size: 2.2rem;
     font-weight: bold;
     line-height: 4.7rem; 
     vertical-align: top; 
     margin-top: 30px;
+} 
+div.title span{
+    font-family: 'IRANSansFaNum';
+    color: #4f5665;  
 }
 
 .textBox{
@@ -136,7 +135,8 @@ div.btn-cta div:hover{
         width: 100%;
     }
     div.title{
-        font-size: 1.6rem;
+        font-size: 2rem;
+        line-height: 4rem; 
     }
     div.btn-cta{
         width: 60%;   

@@ -246,11 +246,10 @@ nav.nav{
     height: auto;
     display: flex;
     flex-direction: column; 
+    direction: rtl;
 }
 div.logo{
-    text-align: center;
-    background-color: #FFFFFF;
-    justify-items: right;
+ display: none;
 }
 div.menu-bar{
     width: 100%;
