@@ -77,7 +77,7 @@ export default {
             }
             else{
                 window.scrollTo({
-                top: 1400,
+                top: 930,
                 behavior: 'smooth'
                        })
             }
@@ -91,7 +91,7 @@ export default {
             }
             else{
                 window.scrollTo({
-                top: 2000,
+                top: 1620,
                 behavior: 'smooth'
                        })
             }
@@ -105,7 +105,7 @@ export default {
             }
             else{
                 window.scrollTo({
-                top: 2400,
+                top: 3370,
                 behavior: 'smooth'
                        })
             }
@@ -120,7 +120,7 @@ export default {
             }
             else{
                 window.scrollTo({
-                top: 3700,
+                top: 4310,
                 behavior: 'smooth'
                        })
             }
@@ -248,8 +248,9 @@ nav.nav{
     flex-direction: column; 
     direction: rtl;
 }
+
 div.logo{
- display: none;
+    display: none;
 }
 div.menu-bar{
     width: 100%;
@@ -271,6 +272,7 @@ div.menu ul{
 div.menu ul > li{
     list-style-type: none;
     width: 78%;
+    height: 100%;
     border: 1px solid #FFFFFF;
 }
 div.btn-menu{
@@ -289,7 +291,6 @@ div.btn-menu:hover{
     background-color: #FFFFFF;
 }
 .position-li:hover,.position-li:focus,.position-li:active{    
-    border:none;
-}
+    border:none;}
 }
 </style>
