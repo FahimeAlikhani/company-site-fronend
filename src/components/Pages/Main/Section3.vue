@@ -244,6 +244,7 @@ div.container p {
     }
     div.card {
       width: 70%;
+      height: 50vh;
       margin-left: 0;
       padding: 1rem ;
     }
@@ -259,5 +260,10 @@ div.container p {
     span.hoverBox{
       padding:10px 8px;
     }
+    div.container p {
+      direction: rtl;
+      text-align: justify;
+      text-justify: inter-word;
+  }
 }
 </style>

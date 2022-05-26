@@ -178,7 +178,8 @@ div.position-layer{
     }
     div.title {
     text-align: center;      
-    font-size: 1.5rem;   
+    font-size: 1.4rem; 
+    margin-bottom: 40px;  
     }
     div.section2-img{
     display: none;

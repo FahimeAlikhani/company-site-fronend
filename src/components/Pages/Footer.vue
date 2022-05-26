@@ -162,7 +162,8 @@ div.logo{
     font-weight: 500;
     font-style: normal;
     line-height: 30px;
-    text-align: right;
+    direction: rtl;
+    text-align: justify;
     text-justify: inter-word;
     }
  
@@ -269,10 +270,10 @@ div.footer-bottom p{
     }
     div.logo{
        margin-top: 40px;    
-    width: 90%;
-    height: 100%;
-    direction:unset;
-    flex-direction: column;
+       width: 90%;
+       height: 100%;
+       direction:unset;
+       flex-direction: column;
     }
     
 }
