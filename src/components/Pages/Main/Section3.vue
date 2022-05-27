@@ -255,7 +255,7 @@ div.container p {
     }
     div.box{      
       width: 70%; 
-      height: 5rem;
+      height: 4rem;
     }  
     span.hoverBox{
       padding:10px 8px;

@@ -178,7 +178,7 @@ div.position-layer{
     }
     div.title {
     text-align: center;      
-    font-size: 1.4rem; 
+    font-size: 1.3rem; 
     margin-bottom: 40px;  
     }
     div.section2-img{

@@ -247,17 +247,17 @@ nav.nav{
     display: flex;
     flex-direction: column; 
     direction: rtl;
-}
+    }
 
 div.logo{
     display: none;
-}
+    }
 div.menu-bar{
     width: 100%;
-}
+    }
 div.menu{
     background-color: #FFFFFF;
-}
+    }
 div.menu ul{
     display: flex;
     text-align: right;
@@ -267,14 +267,14 @@ div.menu ul{
     overflow: hidden;
     margin: auto;
     transition:all 1s;
-}
+    }
 
 div.menu ul > li{
     list-style-type: none;
     width: 78%;
     height: 100%;
     border: 1px solid #FFFFFF;
-}
+    }
 div.btn-menu{
     width: 15%;
     display: block;
@@ -282,15 +282,18 @@ div.btn-menu{
     text-align: center;
     background-color: #FFFFFF;
     transition: ease-in 0.5s;
-}
+    }
 div.btn-menu img{
     width: 100%;
     height: 100%;
-}
+    }
+
 div.btn-menu:hover{
     background-color: #FFFFFF;
-}
+    }
+
 .position-li:hover,.position-li:focus,.position-li:active{    
-    border:none;}
+    border:none;
+    }
 }
 </style>
