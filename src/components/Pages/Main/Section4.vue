@@ -240,7 +240,7 @@ div.container{
   font-family: 'IRANSansFaNum';
   font-style: normal;
   letter-spacing: -0.03em;
-  margin-top: 10%;
+  margin-top: 100px;
   margin-right: 10px;
 }
 
@@ -276,6 +276,9 @@ div.container p {
     }
     img.avatar_blur{
       width: 70%;
+    }
+    div.container{
+      margin-top: 120px;
     }
 }
 </style>

@@ -225,7 +225,7 @@ div.footer-bottom{
     text-align: center;
     color: #FFFFFF;
     font-size:1rem;
-    margin-top: 80px;
+    margin-top: 60px;
     padding-bottom: 10px;
     font-weight: 500;
     font-style: normal;
@@ -274,6 +274,9 @@ div.footer-bottom p{
        height: 100%;
        direction:unset;
        flex-direction: column;
+    }
+    div.footer-bottom{
+        font-weight: 400px;
     }
     
 }
