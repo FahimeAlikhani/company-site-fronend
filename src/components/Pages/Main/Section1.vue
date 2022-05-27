@@ -146,7 +146,12 @@ div.btn-cta div:hover{
         font-weight: 500;
     }
     .textBox{
-    margin-left: 35px;
-}
+        margin-left: 35px;
+    }
+    div.position{
+        margin-top: 5%;
+        margin-bottom: 6%;
+        margin-left: 20%;
+    }
 }
 </style>
