@@ -240,7 +240,7 @@ div.container{
   font-family: 'IRANSansFaNum';
   font-style: normal;
   letter-spacing: -0.03em;
-  margin-top: 100px;
+  margin-top: 10%;
   margin-right: 10px;
 }
 
@@ -261,18 +261,21 @@ div.container p {
 }
 @media(max-width: 768px){
     section.section4{
-        padding-bottom: 0;
+      padding-bottom: 0;
     }
     div.header-title{
       text-align: center;
     }
     div.title-Horizontal-line{ 
-       width: 0;
-       margin: 0px ;
+      width: 0;
+      margin: 0px ;
     }
     div.title {
-    text-align: center;      
-    font-size: 1.5rem;   
+      text-align: center;      
+      font-size: 1.5rem;   
+    }
+    img.avatar_blur{
+      width: 70%;
     }
 }
 </style>
