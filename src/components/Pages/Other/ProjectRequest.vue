@@ -211,11 +211,8 @@ div.position-layer{
     margin: 32px 0 12px 0;
 }
 .input{
-    /* Width:400px;
-    Height:48px; */
    max-width: 23rem;
-    min-width: 23rem;
-    Height:22%;
+    min-width: 23rem;   
     box-sizing: content-box;
     font-family: 'IRANSansFaNum';
     font-style: normal;
@@ -224,11 +221,23 @@ div.position-layer{
     line-height: 28px;
     text-align: right;
     color: #D0CFD4;
-    padding: 10px 8px;
+    padding: 20px 8px;
     margin: 15px 0; 
     align-items: center;  
 }
-
+input:focus { 
+    outline: none !important;
+    border-color: #F53838;
+    box-shadow: 0 0 10px #F53838;
+}
+textarea.input {
+  padding: 20px 8px 90px 8px;
+}
+textarea.input:focus { 
+    outline: none !important;
+    border-color: #F53838;
+    box-shadow: 0 0 10px #F53838;
+}
 .text-box{
     max-height:238px;
     min-height:238px;
