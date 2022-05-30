@@ -18,7 +18,7 @@
             </div> 
         <div class="position">  
            <div class="btn-cta">           
-             <div> <router-link class="routerLink" to="">مشاوره و برآورد هزینه</router-link> </div>     
+             <div> <router-link class="routerLink" to="../Other/ConsultingPage">مشاوره و برآورد هزینه</router-link> </div>     
              <div> <router-link class="routerLink" to="../Other/ProjectRequest">سفارش پروژه</router-link></div>
             </div>
         </div>
