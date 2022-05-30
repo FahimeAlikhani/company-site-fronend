@@ -3,6 +3,6 @@ export const APISettings = {
     headers: new Headers({
       Accept: "application/json",
     }),
-    baseURL: "https://jsonplaceholder.typicode.com/",
+    baseURL: "jahanafza:8000",
   };
   
