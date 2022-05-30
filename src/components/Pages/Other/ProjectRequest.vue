@@ -35,6 +35,7 @@
                    <div class="text">
                        <p>پروژه خود را به بهترین ها بسپارید</p> 
                     </div>
+                    <div class="input-box">
                     <div>
                       <label for="full_name" class="label">نام و نام خانوادگی</label>
                         <div class="">
@@ -70,6 +71,8 @@
                                   name="message"
                                   required
                                   rows="4"
+                                  maxlength="4"
+                                  size="4"
                                   class="input"
                                   placeholder="توضیحات پروژه را بنویسید"
                                  ></textarea>
@@ -82,6 +85,7 @@
                           >
                              {{ loading ? "Sending Message..." : "ارسال" }}
                           </button>
+                      </div>
                       </div>
                </div>
            </form>
@@ -178,6 +182,7 @@ div.position-layer2{
     margin-top:2.56rem ; 
     margin-bottom: 8rem;
     text-align: right;
+    margin: 41px 0 120px 0;
 }
 div.text p{
     font-style: normal;
@@ -186,6 +191,7 @@ div.text p{
     line-height: 28px;
     color: #4F5665;
     margin-bottom: 3.75rem;
+    align-items: center;
 }
 
 div.position-layer{
@@ -202,11 +208,15 @@ div.position-layer{
     line-height: 28px;
     text-align: right;
     color: #4F5665;
-    padding:32px 12px;
+    margin: 32px 0 12px 0;
 }
 .input{
-    min-width: 25rem;
-    max-width: 25rem;
+    /* Width:400px;
+    Height:48px; */
+   max-width: 23rem;
+    min-width: 23rem;
+    Height:22%;
+    box-sizing: content-box;
     font-family: 'IRANSansFaNum';
     font-style: normal;
     font-weight: 500;
@@ -215,13 +225,21 @@ div.position-layer{
     text-align: right;
     color: #D0CFD4;
     padding: 10px 8px;
-    margin: 12px 0 32px 0;
+    margin: 15px 0; 
+    align-items: center;  
+}
+
+.text-box{
+    max-height:238px;
+    min-height:238px;
+    max-width: 23rem;
+    min-width: 23rem;
 }
 .submit{
-    width: 20%;
+    width: 33%;
     padding: 12px 24px;
-    background: #F53838;
-    border-radius: 10px;
+    background:#F53838 ;
+    border-radius: 6px;
     margin-top: 1.375rem;
     cursor: pointer; 
     text-decoration: none;
@@ -230,6 +248,7 @@ div.position-layer{
     line-height: 1.76rem;
     font-weight: 700;
     text-align: center; 
+    direction: ltr;
 }
 div.btn-cta :hover{
     transform:scale(.9);
@@ -257,5 +276,9 @@ div.btn-cta :hover{
    .input{
        width: 50%; 
    }
+   .label{
+    padding:32px 10%;
+   }
+
 }
 </style>
