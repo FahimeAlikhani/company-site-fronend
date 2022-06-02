@@ -6,10 +6,10 @@ services:
     hostname: develop.jahanafza.com
     restart: always
     environment:
-      - VIRTUAL_HOST=develop.jahanafza.com
+      - VIRTUAL_HOST=jahanafza.com
       - VIRTUAL_PORT=80
       - VIRTUAL_PROTO=http
-      - LETSENCRYPT_HOST=develop.jahanafza.com
+      - LETSENCRYPT_HOST=jahanafza.com
       - LETSENCRYPT_EMAIL=a.rahnam78@gmail.com
 
 networks:
