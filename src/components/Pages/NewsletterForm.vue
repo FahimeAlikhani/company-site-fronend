@@ -91,7 +91,7 @@ export default {
       this.form.sending = true;
       this.form.errors.push('Sending...');
       try {
-        const response = await axios.post('/api/subscribe', {email: this.form.email});
+        const response = await axios.post('newsletterform', {email: this.form.email});
         this.form.success = true;
         this.resetFormEmail();
         this.form.errors.push(`Thank you: ${this.form.email} ${response.data}!`);
