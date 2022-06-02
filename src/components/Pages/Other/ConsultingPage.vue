@@ -114,7 +114,7 @@ export default {
     sendMessage() {
       this.loading = true;
        axios
-        .post(APISettings.baseURL + "ConsultingPage", {
+        .post(APISettings.baseURL + "/dashboard/ConsultingPage", {
           name: this.name,
           email: this.email,
           phone: this.phone,

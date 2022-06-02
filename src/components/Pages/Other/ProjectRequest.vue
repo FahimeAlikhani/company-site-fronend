@@ -106,7 +106,6 @@ export default {
       errored: false,
       name: "",
       email: "",
-      phone: "",
       message: "",
     }
   },
@@ -117,7 +116,6 @@ export default {
         .post(APISettings.baseURL + "/dashboard/projectrequest", {
           name: this.name,
           email: this.email,
-          phone: this.phone,
           message: this.message,
         // eslint-disable-next-line no-unused-vars
         }).then(response => {
