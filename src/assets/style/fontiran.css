@@ -24,16 +24,16 @@ This set of fonts are used in this project under the license: (U3HGWW)
 	font-family: IRANSansX;
 	font-style: normal;
 	font-weight: 700;
-	src: url('fonts/woff/IRANSansX-Bold.woff') format('woff'),   
-	url('fonts/woff2/IRANSansX-Bold.woff2') format('woff2');	 
+	src: url('../style/fonts/woff/IRANSansX-Bold.woff') format('woff'),   
+	url('../style/fonts/woff2/IRANSansX-Bold.woff2') format('woff2');	 
 }
 
 @font-face {
 	font-family: IRANSansX;
 	font-style: normal;
 	font-weight: 400;
-	src: url('fonts/woff/IRANSansX-Regular.woff') format('woff'),   
-	url('fonts/woff2/IRANSansX-Regular.woff2') format('woff2');	
+	src: url('../style/fonts/woff/IRANSansX-Regular.woff') format('woff'),   
+	url('../style/fonts/woff2/IRANSansX-Regular.woff2') format('woff2');	
 }
 
 
