@@ -63,6 +63,19 @@
                            </div>
                        </div>
                        <div>
+                       <label for="phone" class="label">تلفن تماس</label>
+                          <div class="">
+                             <input
+                                 id="phone"
+                                 v-model="phone"
+                                 name="phone"
+                                 required
+                                 class="input"
+                                 placeholder="شماره خود را وارد کنید"
+                              />
+                           </div>
+                       </div>
+                       <div>
                           <label for="message" class="label">توضیحات</label>
                              <div class="">
                                <textarea
@@ -86,7 +99,7 @@
                              {{ loading ? "Sending Message..." : "ارسال" }}
                           </button>
                       </div>
-                      </div>
+                    </div>
                </div>
            </form>
           </div>
@@ -106,6 +119,7 @@ export default {
       errored: false,
       name: "",
       email: "",
+      phone:"",
       message: "",
     }
   },
@@ -116,6 +130,7 @@ export default {
         .post(APISettings.baseURL + "/dashboard/ConsultingPage", {
           name: this.name,
           email: this.email,
+          phone: this.phone,
           message: this.message,
         // eslint-disable-next-line no-unused-vars
         }).then(response => {
