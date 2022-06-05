@@ -4,6 +4,7 @@ services:
     image: jahanafza-web:latest
     build: .
     hostname: develop.jahanafza.com
+    container_name: jahanafza-front
     restart: always
     environment:
       - VIRTUAL_HOST=jahanafza.com
