@@ -113,7 +113,7 @@ export default {
     sendMessage() {
       this.loading = true;
        axios
-        .post(APISettings.baseURL + "projectrequest", {
+        .post(APISettings.baseURL + "/projectrequest", {
           name: this.name,
           email: this.email,
           message: this.message,
