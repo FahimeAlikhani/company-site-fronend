@@ -3,6 +3,6 @@ export const APISettings = {
     headers: new Headers({
       Accept: "application/json",
     }),
-    baseURL: "http://jahanafza.com/dashboard/",
+    baseURL: "http://jahanafza.com",
   };
   
